@@ -11,7 +11,6 @@ function App() {
       <HeaderNavbar/>
       <BottomNav/>
       <FrontCarousel/>
-      
     </div>
   );
 }
