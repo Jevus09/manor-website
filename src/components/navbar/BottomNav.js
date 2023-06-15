@@ -7,7 +7,7 @@ function BottomNav() {
       <Navbar>
         <Container>
           <div className='hidden sm:block w-screen'>
-            <Nav className='flex text-xs md:text-base justify-between p-1'>
+            <Nav className='flex text-xs md:text-base font-bold justify-between p-1'>
               <Nav.Link href='#home' >ABOUT US</Nav.Link>
               <Nav.Link href='#features' >POST-HOSPITAL REHABILITATION</Nav.Link>
               <Nav.Link href='#pricing' >ADDITIONAL SERVICES</Nav.Link>
