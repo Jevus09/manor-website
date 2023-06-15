@@ -49,9 +49,9 @@ code {
     justify-content: space-between;
   }
   .carimage {
+    height: 45vh;
     background-size:cover;
     background-position: center;
-    height: 45vh;
   }
 
 }
