@@ -49,7 +49,7 @@ const Services = () => {
       {data.map((item) => (
         <div
           key={item.id}
-          className="text-center flex flex-col items-center p-2 rounded-lg"
+          className="text-center flex flex-col items-center p-2"
         >
           <h3 className=" p-3 bg-white rounded-full text-[#3f87b9]">
             {item.icon}
