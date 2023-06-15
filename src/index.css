@@ -31,9 +31,18 @@ code {
   align-items: center;
 }
 
+.carImg {
+  background-size: cover;
+}
+
+
 @media only screen and (max-width: 960px) {
   .test {
     width: 100vw;
     justify-content: space-between;
+  }
+  .carImg {
+    height: 45vh;
+    background-size: cover;
   }
 }
