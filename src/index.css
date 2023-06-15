@@ -30,3 +30,10 @@ code {
   justify-content: flex-end;
   align-items: center;
 }
+
+@media only screen and (max-width: 960px) {
+  .test {
+    width: 100vw;
+    justify-content: space-between;
+  }
+}
