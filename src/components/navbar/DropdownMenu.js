@@ -24,10 +24,10 @@ const DropdownMenu = () => {
         </Container>
       </Navbar>
 
-      <Offcanvas className='min-h-full' show={showOffcanvas} onHide={handleCloseOffcanvas} placement='top'>
+      <Offcanvas style={{height: '65vh'}} className='' show={showOffcanvas} onHide={handleCloseOffcanvas} placement='top'>
         <Offcanvas.Header closeButton></Offcanvas.Header>
-        <Offcanvas.Body>
-          <Nav className='me-auto text-center'>
+        <Offcanvas.Body >
+          <Nav className='me-auto text-center' >
             <Nav.Link href='#home'>ABOUT US</Nav.Link>
             <Nav.Link href='#features'>POST-HOSPITAL REHABILITATION</Nav.Link>
             <Nav.Link href='#pricing'>ADDITIONAL SERVICES</Nav.Link>
