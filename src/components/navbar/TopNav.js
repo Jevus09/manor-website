@@ -9,11 +9,9 @@ function HeaderNavbar() {
     <Navbar>
       <Container className='test1'>
         <div className='test'>
-          <div className='p-0'>
-            <Navbar.Brand href='#home' className='p-0'>
-              <img className='h-20' src={logo} alt='logo' />
+            <Navbar.Brand  href='#home' className='p-0 text-xs'>
+            <img className='h-20' src={logo} alt='logo' />
             </Navbar.Brand>
-          </div>
           <div className='drop'>
             <DropdownMenu />
           </div>
@@ -21,7 +19,7 @@ function HeaderNavbar() {
         <div className='d-flex align-items-center'>
           <Navbar.Text className='d-none d-sm-flex align-items-center me-4'>
             <AiOutlinePhone className='text-3xl text-[#31b5aa]' />
-            <a className='link link-hover text-2xl text-[#31b5aa]' href='#login'>
+            <a className='link link-hover text-xl text-[#31b5aa]' href='#login'>
               847-635-4000&nbsp;&nbsp;&nbsp;&nbsp;
             </a>
           </Navbar.Text>
