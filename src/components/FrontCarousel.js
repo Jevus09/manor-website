@@ -14,15 +14,6 @@ function FrontCarousel() {
             <h1 className="text-7xl italic ">Our Family to Yours</h1>
             <p className="my-8 font-light">Lee Manor employs only the most qualified specialists, <br/> licensed nurses, and certified nursing assistants.<br/> Our staff will give you the peace of mind you deserve during <br/> your loved one's stay at Lee Manor.</p>
             <a href='/contact' className=" border border-line px-3 py-2 rounded-full text-white no-underline">Get in Touch</a>
-    <div >
-      <Carousel>
-        <Carousel.Item className=''>
-          <img className="d-block w-100 brightness-75 h-128" src={first} alt="First slide" />
-          <Carousel.Caption className="flex flex-col items-center justify-center h-full ">
-            <h1 className="text-center font-black">Lee Manor employs only the most qualified</h1>
-            <p className="text-center font-black ">specialists, licensed nurses, and certified nursing assistants. </p>
-            <p className='font-black backdrop-opacity-95' >Our staff will give you the peace of mind you deserve during your loved one's stay at Lee Manor.</p>
-            <Button type="button" class="btn btn-outline-light ">Get in Touch</Button>
           </Carousel.Caption>
           </div>
         </Carousel.Item>
