@@ -6,12 +6,13 @@ import OurMissionBanner from './components/missionBanner/OurMissionBanner';
 import Services from './components/Services';
 
 
+
 function App() {
   return (
     <div className="App">
       <HeaderNavbar/>
       <BottomNav/>
-      <FrontCarousel/>
+      <FrontCarousel />
       <Services/>
       <OurMissionBanner/>
     </div>
