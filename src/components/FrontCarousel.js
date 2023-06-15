@@ -15,7 +15,6 @@ function FrontCarousel() {
             <p className='font-black backdrop-opacity-95' >Our staff will give you the peace of mind you deserve during your loved one's stay at Lee Manor.</p>
             <Button type="button" class="btn btn-outline-light ">Get in Touch</Button>
           </Carousel.Caption>
-          </div>
         </Carousel.Item>
         <Carousel.Item>
           <img className="d-block w-100 brightness-75 h-128" src={second} alt="Second slide" />
