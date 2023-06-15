@@ -1,5 +1,5 @@
 import {React, useState } from 'react';
-import { Button, Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
+import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
 
 
 const DropdownMenu = () => {
@@ -13,7 +13,7 @@ const DropdownMenu = () => {
     <div>
       <Navbar bg='light' variant='light' className='border border-white'>
         <Container>
-          <div className='md:hidden p-0'>
+          <div className='min-[640px]:hidden p-0'>
           {/*eslint-disable-next-line*/}
             <a onClick={handleShowOffcanvas} className='text-black '>
               <svg className='swap-off fill-current' xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 512 512'>
