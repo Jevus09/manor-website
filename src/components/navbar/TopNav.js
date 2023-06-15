@@ -2,17 +2,25 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import { AiOutlinePhone } from 'react-icons/ai'
 import logo from '../../assets/logom.jpg'
+import DropdownMenu from './DropdownMenu'
 
 function HeaderNavbar() {
   return (
     <Navbar>
-      <Container>
-        <Navbar.Brand href='#home'>
-          <img className='h-28' src={logo} alt='logo' />
-        </Navbar.Brand>
+      <Container className='test1'>
+        <div className='test'>
+          <div className='p-0'>
+            <Navbar.Brand href='#home' className='p-0'>
+              <img className='h-20' src={logo} alt='logo' />
+            </Navbar.Brand>
+          </div>
+          <div className='drop'>
+            <DropdownMenu />
+          </div>
+        </div>
         <Navbar.Toggle />
-        <Navbar.Collapse className='justify-content-end '>
-          <Navbar.Text className='flex'>
+        <Navbar.Collapse>
+          <Navbar.Text className='flex hidden sm:block'>
             <AiOutlinePhone className='text-3xl text-[#31b5aa]' />
             <button
               className='link link-hover text-2l text-[#31b5aa]'
