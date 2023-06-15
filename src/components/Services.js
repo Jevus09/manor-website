@@ -45,11 +45,11 @@ const data = [
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 bg-[#3f87b9] h-96 place-items-center ">
+    <div className="grid grid-cols-1 md:grid-cols-5 bg-[#3f87b9] h-full md:h-80 place-items-center ">
       {data.map((item) => (
         <div
           key={item.id}
-          className="text-center flex flex-col items-center p-6 rounded-lg"
+          className="text-center flex flex-col items-center p-2 rounded-lg"
         >
           <h3 className=" p-3 bg-white rounded-full text-[#3f87b9]">
             {item.icon}
