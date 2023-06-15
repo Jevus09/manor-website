@@ -4,6 +4,8 @@ import { FaUserNurse } from 'react-icons/fa';
 import { MdMedicalServices } from 'react-icons/md';
 import { FaHandHoldingHeart } from 'react-icons/fa';
 import { GiBrain } from 'react-icons/gi';
+import { TbTilde } from 'react-icons/tb';
+import { MdLocalPharmacy } from 'react-icons/md';
 
 const data = [
   {
@@ -41,20 +43,28 @@ const data = [
     text: 'Motor-skill exercises.',
     text2: 'Constraint-induced therapy',
   },
+  {
+    id: 6,
+    icon: <MdLocalPharmacy />,
+    title: 'Long Term Waver',
+    text: 'Personalized Nutritional Services',
+    text2: 'Social Work Services',
+  },
 ];
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-5 bg-[#3f87b9] h-full md:h-80 place-items-center ">
+    <div className="grid grid-cols-2 md:grid-cols-6 bg-[#3f87b9] h-full md:h-80 place-items-center ">
       {data.map((item) => (
         <div
           key={item.id}
-          className="text-center flex flex-col items-center p-2"
+          className="text-center flex flex-col items-center m-3"
         >
           <h3 className=" p-3 bg-white rounded-full text-[#3f87b9]">
             {item.icon}
           </h3>
           <h5 className="text-white text-base font-bold">{item.title}</h5>
+          <TbTilde className='text-[#98bad6] my-1' />
           <p className="text-[#98bad6] text-xs font-thin">
             {item.text}
             <br />

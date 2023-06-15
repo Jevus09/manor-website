@@ -4,6 +4,7 @@ import './index.css';
 import FrontCarousel from './components/FrontCarousel';
 import OurMissionBanner from './components/missionBanner/OurMissionBanner';
 import Services from './components/Services';
+import Greeting from './components/Greeting';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <FrontCarousel />
       <Services/>
       <OurMissionBanner/>
+      <Greeting/>
     </div>
   );
 }
