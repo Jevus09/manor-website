@@ -43,7 +43,7 @@ code {
 }
 
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 640px) {
   .test {
     width: 100vw;
     justify-content: space-between;
