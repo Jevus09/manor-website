@@ -8,7 +8,7 @@ function FrontCarousel() {
     <div>
       <Carousel >
         <Carousel.Item >
-          <img className="d-block w-100 md:brightness-75 carimage " style={{backgroundImage: `url(${first})`}} alt="First slide" />
+          <div className="d-block w-100 h-128 md:brightness-75 carimage " style={{backgroundImage: `url(${first})`}}></div>
           <div className="">
           <Carousel.Caption className="hidden sm:block ">
             <h1 className="text-7xl italic ">Our Family to Yours</h1>
@@ -18,7 +18,7 @@ function FrontCarousel() {
           </div>
         </Carousel.Item>
         <Carousel.Item >
-          <img className="d-block w-100 md:brightness-75 carimage" style={{backgroundImage: `url(${second})`}} alt="Second slide" />
+          <div className="d-block w-100 h-128 md:brightness-75 carimage" style={{backgroundImage: `url(${second})`}}  ></div>
           <Carousel.Caption className="hidden sm:block ">
             <h1 className="text-7xl " >Therapy You Can Trust</h1>
             <p className="my-8 font-light">Ability Rehab is a comprehensive rehabilitative contract <br/> provider of Physical, Occupational and Speech-Language <br/> therapy services. </p>
@@ -26,7 +26,7 @@ function FrontCarousel() {
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item >
-          <img className="d-block w-100 brightness-75 carimage" style={{backgroundImage: `url(${third})`}} alt="Third slide" />
+          <div className="d-block w-100 h-128 brightness-75 carimage" style={{backgroundImage: `url(${third})`}}></div>
           <Carousel.Caption className="hidden sm:block ">
             <h1 className="text-7xl ">Private Nursing</h1>
             <p className="my-8 font-light">It's about believing in those people who need help living at home. <br/> And it's what we set out to do every day.</p>

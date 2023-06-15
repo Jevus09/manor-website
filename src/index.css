@@ -39,7 +39,6 @@ code {
 }
 
 .carimage {
-  height: 60vh;
   background-size: cover;
 }
 
@@ -50,8 +49,7 @@ code {
     justify-content: space-between;
   }
   .carimage {
-    height: 60vh;
-    object-fit:cover;
+    background-size:cover;
   }
 
 }
