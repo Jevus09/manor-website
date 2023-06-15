@@ -18,9 +18,9 @@ const data = [
   {
     id: 2,
     icon: <FaUserNurse />,
-    title: 'Skilled Nursing Care',
+    title: 'Skilled Nursing',
     text: '24 Hour Skilled Nursing Care',
-    text2: ' Short And Long-Term Rehabilitation',
+    text2: ' Short And Long-Term',
   },
   {
     id: 3,
@@ -36,29 +36,29 @@ const data = [
     text: 'Personal concierge service',
     text2: 'Private rooms, private shower/bath',
   },
-  {
-    id: 5,
-    icon: <GiBrain />,
-    title: 'Stroke Recovery',
-    text: 'Motor-skill exercises.',
-    text2: 'Constraint-induced therapy',
-  },
-  {
-    id: 6,
-    icon: <MdLocalPharmacy />,
-    title: 'Long Term Waver',
-    text: 'Personalized Nutritional Services',
-    text2: 'Social Work Services',
-  },
+  // {
+  //   id: 5,
+  //   icon: <GiBrain />,
+  //   title: 'Stroke Recovery',
+  //   text: 'Motor-skill exercises.',
+  //   text2: 'Constraint-induced therapy',
+  // },
+  // {
+  //   id: 6,
+  //   icon: <MdLocalPharmacy />,
+  //   title: 'Long Term Waver',
+  //   text: 'Personalized Nutritional Services',
+  //   text2: 'Social Work Services',
+  // },
 ];
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-6 bg-[#3f87b9] h-full md:h-80 place-items-center ">
+    <div className="grid grid-cols-1 md:grid-cols-4 bg-[#3f87b9] h-full place-items-center place-content-evenly">
       {data.map((item) => (
         <div
           key={item.id}
-          className="text-center flex flex-col items-center m-3"
+          className="text-center flex flex-col items-center m-5 sm:m-3 "
         >
           <h3 className=" p-3 bg-white rounded-full text-[#3f87b9]">
             {item.icon}
