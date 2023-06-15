@@ -49,5 +49,9 @@ code {
     width: 100vw;
     justify-content: space-between;
   }
+  .carimage {
+    height: 60vh;
+    object-fit:cover;
+  }
 
 }
