@@ -31,9 +31,23 @@ code {
   align-items: center;
 }
 
+.carousel-caption {
+  right: auto !important;
+  top: 40%;
+  text-align: start !important;
+
+}
+
+.carimage {
+  height: 60vh;
+  background-size: cover;
+}
+
+
 @media only screen and (max-width: 960px) {
   .test {
     width: 100vw;
     justify-content: space-between;
   }
+
 }

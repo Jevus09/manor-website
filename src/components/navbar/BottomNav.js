@@ -7,7 +7,7 @@ function BottomNav() {
   return (
     <>
       <Navbar bg='light' variant='light' className='p-3'>
-        <Container>
+        <Container >
           <div className='hidden sm:block'>
             <Nav className='me-auto flex space-x-2 font-bold	 '>
               <Nav.Link href='#home'>ABOUT US</Nav.Link>

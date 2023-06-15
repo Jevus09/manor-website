@@ -45,7 +45,7 @@ const data = [
 
 const Services = () => {
   return (
-    <div className="h-full grid grid-cols-2 md:grid-cols-5 bg-[#3f87b9] h-80">
+    <div className="h-full grid grid-cols-1 md:grid-cols-5 bg-[#3f87b9] h-80">
       {data.map((item) => (
         <div
           key={item.id}
