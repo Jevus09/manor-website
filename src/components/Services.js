@@ -3,9 +3,9 @@ import { TfiWheelchair } from 'react-icons/tfi';
 import { FaUserNurse } from 'react-icons/fa';
 import { MdMedicalServices } from 'react-icons/md';
 import { FaHandHoldingHeart } from 'react-icons/fa';
-import { GiBrain } from 'react-icons/gi';
+// import { GiBrain } from 'react-icons/gi';
 import { TbTilde } from 'react-icons/tb';
-import { MdLocalPharmacy } from 'react-icons/md';
+// import { MdLocalPharmacy } from 'react-icons/md';
 
 const data = [
   {
