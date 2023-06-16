@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Lora:wght@400;500;700&family=Tangerine:wght@400;700&display=swap');
+
+
 .main {
     display: flex;
     align-items: center;
@@ -9,4 +12,31 @@
     display: flex;
     flex-direction: column;
     width: 40vw;
+}
+
+.missionText {
+    font-family: 'Tangerine', cursive;
+    font-weight: 700;
+    font-size: 7vh;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .main {
+        flex-direction: column;
+        padding: 3vh;
+    }
+
+    .missionImg {
+        display: none;
+    }
+
+    .textarea {
+        width: 75vw;
+        text-align: center;
+    }
 }
