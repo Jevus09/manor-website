@@ -1,6 +1,5 @@
 import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
-import test from '../assets/greetings/agency.jpg';
 import HOSPICE from '../assets/programs/HOSPICE.jpg'
 import IV from '../assets/programs/ivtherapy.jpg'
 import ORTHO from '../assets/programs/ortho.jpg'
@@ -73,10 +72,10 @@ const Programs = () => {
         <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center px-3 gap-4  "> {/* Updated line */}
           {data.map((item) => (
             <div key={item.id} className="place-content-center w-max "> {/* Updated line */}
-              <Card className="group program-card" style={{ height: '16rem', width: '18rem' }}>
+              <a href='/#' className='no-underline' ><Card className="group program-card" style={{ height: '16rem', width: '18rem' }}>
                 {/*  Cover of Card */}
                 <Card.Body
-                  className="bg-center bg-cover flex flex-col justify-center items-center group-hover:hidden"
+                  className="bg-center bg-cover flex flex-col justify-center items-center md:group-hover:hidden"
                   style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url(${item.background})` }}
                 >
                   <Card.Text>
@@ -84,7 +83,7 @@ const Programs = () => {
                   </Card.Text>
                 </Card.Body>
                 {/*  Inside of Card */}
-                <Card.Body className="hidden group-hover:block bg-[#31b5aa] text-center object-cover" >
+                <Card.Body className="hidden md:group-hover:block bg-[#31b5aa] text-center object-cover" >
                   <Card.Text className='inside-text text-xs md:text-base text-center font-bold text-white' >
                     <ListGroup.Item>{item.point1}</ListGroup.Item>
                     <ListGroup.Item>{item.point2}</ListGroup.Item>
@@ -92,6 +91,7 @@ const Programs = () => {
                   </Card.Text>
                 </Card.Body>
               </Card>
+              </a>
             </div>
           ))}
         </div>
