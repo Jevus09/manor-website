@@ -1,12 +1,12 @@
 import Carousel from 'react-bootstrap/Carousel';
 import first from '../assets/carousel/home.jpg';
-import second from '../assets/carousel/caro1.jpg';
-import third from '../assets/carousel/caro2.jpg';
+import second from '../assets/carousel/therapy.jpg';
+import third from '../assets/carousel/nursing.jpg';
 
 function FrontCarousel() {
   return (
     <div>
-      <Carousel >
+      <Carousel>
         <Carousel.Item >
           <div className="d-block w-100 h-128 md:brightness-75 carimage " style={{backgroundImage: `url(${first})`}}></div>
           <div className="">
