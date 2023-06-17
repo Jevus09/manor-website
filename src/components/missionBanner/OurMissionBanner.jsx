@@ -5,7 +5,7 @@ import './missionBanner.css'
 const OurMissionBanner = () => {
 
   return (
-    <div className='main' >
+    <div className='main h-80' >
         <img className='missionImg' style={{height: '30vh'}} src={missionImg} alt="" />
         <div className="text">
           <div className='textarea'>

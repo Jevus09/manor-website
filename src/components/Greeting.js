@@ -28,7 +28,7 @@ const data = [
 const Greeting = () => {
   return (
     <div className="bg-[#f5efed] h-full">
-      <h1 className="flex items-center justify-center py-16">Welcome to Lee Manor!</h1>
+      <h1 className="flex items-center justify-center pt-16 md:pb-12">Welcome to Lee Manor!</h1>
       <div className="flex flex-col md:flex-row md:justify-center">
         {data.map((item) => (
           <div

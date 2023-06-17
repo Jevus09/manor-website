@@ -69,7 +69,7 @@ const Programs = () => {
     return (
       <div className="h-full pb-20 bg-[#f5efed]">
         <h1 className="flex justify-center text-xl md:text-3xl py-10 md:py-24">OUR REHABILITATION PROGRAMS</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center px-3 gap-4  "> {/* Updated line */}
+        <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center 2xl:px-72 gap-4  "> {/* Updated line */}
           {data.map((item) => (
             <div key={item.id} className="place-content-center w-max "> {/* Updated line */}
               <a href='/#' className='no-underline' ><Card className="group program-card" style={{ height: '16rem', width: '18rem' }}>
