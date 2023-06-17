@@ -34,7 +34,7 @@ const DropdownMenu = () => {
             <Nav.Link href='#home'>SKILLED NURSING CARE</Nav.Link>
             <Nav.Link href='#pricing'>EMPLOYMENT</Nav.Link>
             <Nav.Link href='#pricing'>CONTACT</Nav.Link>
-            <a href='tel:+847-635-4000' className='no-underline pb-4'>(847)-635-4000</a>
+            <a href='tel:+847-635-4000' className='no-underline text-[#31b5aa] pb-4'>(847)-635-4000</a>
             <a className='text-base text-center bg-[#31b5aa] text-white p-3 rounded-full no-underline' href='/#'>
               MAKE AN ENQUIRY
             </a>

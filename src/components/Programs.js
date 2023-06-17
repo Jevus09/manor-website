@@ -6,6 +6,7 @@ import ORTHO from '../assets/programs/ortho.jpg'
 import UROLOGY from '../assets/programs/UROLOGY.jpg'
 import WOUND from '../assets/programs/WOUND.jpg'
 import NEUROLOGY from '../assets/programs/NEUROLOGY.jpg'
+import { TbTilde } from 'react-icons/tb';
 
 
 const data = [
@@ -83,11 +84,11 @@ const Programs = () => {
                   </Card.Text>
                 </Card.Body>
                 {/*  Inside of Card */}
-                <Card.Body className="hidden md:group-hover:block bg-[#31b5aa] text-center object-cover" >
-                  <Card.Text className='inside-text text-xs md:text-base text-center font-bold text-white' >
-                    <ListGroup.Item>{item.point1}</ListGroup.Item>
-                    <ListGroup.Item>{item.point2}</ListGroup.Item>
-                    <ListGroup.Item>{item.point3}</ListGroup.Item>
+                <Card.Body className="hidden md:group-hover:block bg-[#31b5aa] object-cover" >
+                  <Card.Text className='inside-text flex flex-col items-center justify-center text-center font-bold text-white' >
+                    <ListGroup.Item  className='mt-4' >Lorem ipsum dolor sit amet consectetur</ListGroup.Item>
+                    <TbTilde className='text-center text-xl my-2' />
+                    <ListGroup.Item className='text-sm text-[#98bad6] font-thin'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</ListGroup.Item>
                   </Card.Text>
                 </Card.Body>
               </Card>

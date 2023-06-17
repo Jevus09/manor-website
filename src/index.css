@@ -46,6 +46,10 @@ code {
   background-size: cover;
 }
 
+.phone {
+  color: #31b5aa !important;
+}
+
 
 @media only screen and (max-width: 639px) {
   .test {

@@ -19,8 +19,8 @@ function HeaderNavbar() {
         <div className='d-flex align-items-center  '>
           <Navbar.Text className='d-none d-sm-flex align-items-center  me-4'>
             <AiOutlinePhone className='text-3xl text-[#31b5aa] max-[639px]:hidden' />
-            <a className='text-xl text-[#31b5aa] max-[639px]:hidden no-underline'  href='tel:+847-635-4000'>
-              847-635-4000&nbsp;&nbsp;&nbsp;&nbsp;
+            <a className='text-xl text-[#31b5aa] max-[639px]:hidden no-underline phone'  href='tel:+847-635-4000'>
+              847-635-4000
             </a>
           </Navbar.Text>
           <div className='d-none d-sm-block '>
