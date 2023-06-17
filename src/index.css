@@ -57,5 +57,14 @@ code {
     background-size:cover;
     background-position: center;
   }
+  .program-card {
+    height: 25vh !important;
+    width: 22vh !important;
+  }
+
+
 
 }
+
+
+

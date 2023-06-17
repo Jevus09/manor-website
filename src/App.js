@@ -6,6 +6,7 @@ import OurMissionBanner from './components/missionBanner/OurMissionBanner';
 import Services from './components/Services';
 import Greeting from './components/Greeting';
 import SecondBanner from './components/SecondBanner';
+import Programs from './components/Programs';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <OurMissionBanner/>
       <Greeting/>
       <SecondBanner/>
+      <Programs/>
     </div>
   );
 }

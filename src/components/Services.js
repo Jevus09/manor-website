@@ -54,11 +54,11 @@ const data = [
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-4 bg-[#3f87b9] h-full place-items-center place-content-evenly">
+    <div className="grid grid-cols-1 md:grid-cols-4 bg-[#3f87b9] h-full place-items-center place-content-evenly py-5">
       {data.map((item) => (
         <div
           key={item.id}
-          className="text-center flex flex-col items-center m-5 sm:m-3 "
+          className="text-center flex flex-col items-center py-1 "
         >
           <h3 className=" p-3 bg-white rounded-full text-[#3f87b9]">
             {item.icon}

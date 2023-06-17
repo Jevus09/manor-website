@@ -1,7 +1,7 @@
 import React from 'react';
-import Patient from '../assets/parient.jpg';
-import Nurse from '../assets/nurse.jpg';
-import Agency from '../assets/agency.jpg';
+import Patient from '../assets/greetings/parient.jpg';
+import Nurse from '../assets/greetings/nurse.jpg';
+import Agency from '../assets/greetings/agency.jpg';
 import { TbTilde } from 'react-icons/tb';
 
 const data = [

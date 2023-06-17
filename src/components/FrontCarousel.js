@@ -1,7 +1,7 @@
 import Carousel from 'react-bootstrap/Carousel';
-import first from '../assets/home.jpg';
-import second from '../assets/caro1.jpg';
-import third from '../assets/caro2.jpg';
+import first from '../assets/carousel/home.jpg';
+import second from '../assets/carousel/caro1.jpg';
+import third from '../assets/carousel/caro2.jpg';
 
 function FrontCarousel() {
   return (
