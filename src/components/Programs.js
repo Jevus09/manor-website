@@ -84,7 +84,7 @@ const Programs = () => {
                   </Card.Text>
                 </Card.Body>
                 {/*  Inside of Card */}
-                <Card.Body className="hidden md:group-hover:block bg-[#31b5aa] object-cover" >
+                <Card.Body style={{backgroundImage: `linear-gradient(#0b22209d, #050f0e9d ), url(${item.background})`}} className="hidden md:group-hover:block bg-cover bg-center  object-cover" >
                   <Card.Text className='inside-text flex flex-col items-center justify-center text-center font-bold text-white' >
                     <ListGroup.Item  className='mt-4' >Lorem ipsum dolor sit amet consectetur</ListGroup.Item>
                     <TbTilde className='text-center text-xl my-2' />
