@@ -7,6 +7,8 @@ import Services from './components/Services';
 import Greeting from './components/Greeting';
 import SecondBanner from './components/SecondBanner';
 import Programs from './components/Programs';
+import Footer from './components/Footer';
+import Reasons from './components/Reasons';
 
 
 
@@ -21,7 +23,9 @@ function App() {
       <OurMissionBanner/>
       <Greeting/>
       <SecondBanner/>
+      <Reasons/>
       <Programs/>
+      <Footer/>
     </div>
   );
 }
