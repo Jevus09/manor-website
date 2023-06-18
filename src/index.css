@@ -22,6 +22,10 @@ code {
     monospace;
 }
 
+.navbar {
+  border-width: 0 !important;
+}
+
 .test {
   display: flex;
   align-items: center;

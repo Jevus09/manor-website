@@ -3,13 +3,14 @@ import Navbar from 'react-bootstrap/Navbar'
 import { AiOutlinePhone } from 'react-icons/ai'
 import logo from '../../assets/logom.jpg'
 import DropdownMenu from './DropdownMenu'
+import BottomNav from './BottomNav'
 
 function HeaderNavbar() {
   return (
-    <Navbar>
+    <Navbar className='flex flex-col'>
       <Container className='test1'>
         <div className='test w-max'>
-            <Navbar.Brand  href='#home' className='text-xs'>
+            <Navbar.Brand  href='/' className='text-xs'>
             <img className='h-20' src={logo} alt='logo' />
             </Navbar.Brand>
           <div className='drop'>
@@ -44,6 +45,7 @@ function HeaderNavbar() {
           </div>
         </div>
       </Container>
+      <BottomNav/>
     </Navbar>
   )
 }

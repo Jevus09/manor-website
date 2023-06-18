@@ -13,7 +13,7 @@ function BottomNav() {
               <Nav.Link href='#pricing' >ADDITIONAL SERVICES</Nav.Link>
               <Nav.Link href='#home' >SKILLED NURSING CARE</Nav.Link>
               <Nav.Link href='#pricing' >EMPLOYMENT</Nav.Link>
-              <Nav.Link href='#pricing' >CONTACT</Nav.Link>
+              <Nav.Link href='/contact' >CONTACT</Nav.Link>
               </Nav>
           </div>
         </Container>
