@@ -71,6 +71,9 @@ const ContactScreen = () => {
                             </div>
                         ))}
                     </div>
+                    <div>
+                        <h1 className='text-center mt-5'>Contat Us</h1>
+                    </div>
                 </div>
 
 
