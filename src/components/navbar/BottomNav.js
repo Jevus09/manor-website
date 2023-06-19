@@ -12,7 +12,7 @@ function BottomNav() {
               <Nav.Link href='#features' >REHABILITATION</Nav.Link>
               <Nav.Link href='#pricing' >ADDITIONAL SERVICES</Nav.Link>
               <Nav.Link href='#home' >SKILLED NURSING CARE</Nav.Link>
-              <Nav.Link href='#pricing' >EMPLOYMENT</Nav.Link>
+              <Nav.Link href='https://www.careerbuilder.com/browse?TNNotFound=true' target='_blank' >EMPLOYMENT</Nav.Link>
               <Nav.Link href='/contact' >CONTACT</Nav.Link>
               </Nav>
           </div>
