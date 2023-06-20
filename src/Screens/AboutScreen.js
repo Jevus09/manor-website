@@ -9,7 +9,7 @@ import SPECI from '../assets/aboutus/Specialized.jpg'
 
 const AboutScreen = () => {
     return (
-        <div className='bg-[linear-gradient(_#FFFFFF_25%,_#ebf3fc_75%)]  '>
+        <div className='bg-[linear-gradient(_#FFFFFF_5%,_#ebf3fc_50%,_#a2ceff_100%)]  '>
 
             {/*Banner*/}
             <div className='pb-5'>
