@@ -56,12 +56,12 @@ const ContactScreen = () => {
             {/* CONTACT CARDS */}
 
 
-                <div className="bg-[#FFFFFF]">
+                <div className="bg-[#FFFFFF] ">
                     <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 xl:px-72">
                         {data.map((item) => (
                             <div
                                 key={item.id}
-                                className='text-center place-items-center py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg'
+                                className='text-center place-items-center py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg animate__animated animate__fadeInUp'
                             >
                                 <div className="flex items-center justify-center"> {/* Add flex classes */}
                                     <h3 className='text-red-600 text-3xl'>{item.icon}</h3>
@@ -72,13 +72,13 @@ const ContactScreen = () => {
                         ))}
                     </div>
                     <div>
-                        <h1 className='text-center mt-5'>Contact Us</h1>
+                        <h1 className='text-center mt-5 animate__animated animate__fadeInUp'>Contact Us</h1>
                     </div>
                 </div>
 
 
             {/* CONTACT FORM */}
-            <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_50%,_#ebf3fc_60%)]'>
+            <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_50%,_#ebf3fc_60%)] animate__animated animate__fadeInUp'>
                 <div className='flex justify-center rounded-lg p-5  w-max'>
                     <div>
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />

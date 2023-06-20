@@ -4,6 +4,8 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen'
 import ContactScreen from './Screens/ContactScreen';
+import AboutScreen from './Screens/AboutScreen';
+import 'animate.css'
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeScreen />} exact />
           <Route path="/contact" element={<ContactScreen />} />
+          <Route path="/about" element={<AboutScreen />} />
         </Routes>
       <Footer />
     </Router>
