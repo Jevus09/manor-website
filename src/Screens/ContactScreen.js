@@ -56,7 +56,7 @@ const ContactScreen = () => {
             {/* CONTACT CARDS */}
 
 
-                <div className="bg-[#FFFFFF] ">
+                <div className="">
                     <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 xl:px-72">
                         {data.map((item) => (
                             <div
@@ -72,13 +72,13 @@ const ContactScreen = () => {
                         ))}
                     </div>
                     <div>
-                        <h1 className='text-center mt-5 animate__animated animate__fadeInUp'>Contact Us</h1>
+                        <h1 className='text-center animate__animated animate__fadeInUp pt-5 '>Contact Us</h1>
                     </div>
                 </div>
 
 
             {/* CONTACT FORM */}
-            <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_50%,_#ebf3fc_60%)] animate__animated animate__fadeInUp'>
+            <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_25%,_#ebf3fc_75%)] animate__animated animate__fadeInUp'>
                 <div className='flex justify-center rounded-lg p-5  w-max'>
                     <div>
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />
