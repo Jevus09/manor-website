@@ -56,7 +56,7 @@ const ContactScreen = () => {
             {/* CONTACT CARDS */}
 
 
-                <div className="contact-card">
+                <div className="bg-[#FFFFFF]">
                     <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 xl:px-72">
                         {data.map((item) => (
                             <div
@@ -78,7 +78,7 @@ const ContactScreen = () => {
 
 
             {/* CONTACT FORM */}
-            <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_30%,_#ebf3fc_30%)]'>
+            <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_50%,_#ebf3fc_60%)]'>
                 <div className='flex justify-center rounded-lg p-5  w-max'>
                     <div>
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />
