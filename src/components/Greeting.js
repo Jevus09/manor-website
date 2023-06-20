@@ -37,14 +37,14 @@ const Greeting = () => {
           >
             <img src={item.image} alt='' className='w-96 my-12 px-8 md:px-0' />
             <h3>{item.title}</h3>
-            <TbTilde className='text-[#31b5aa] text-xl my-2' />
+            <TbTilde className='text-[#3f87b9] text-xl my-2' />
             <p className='text-center w-72'>{item.description}</p>
-            <a href='/#' className='text-[#31b5aa] no-underline'>READ MORE</a>
+            <a href='/#' className='text-[#3f87b9] no-underline'>READ MORE</a>
           </div>
         ))}
       </div>
       <div className='flex items-center justify-center p-10'>
-        <a href='/#' className='py-3 bg-[#31b5aa] text-white px-5 rounded-full no-underline'>View Services</a>
+        <a href='/#' className='py-3 bg-[#09153d] text-white px-5 rounded-full no-underline'>View Services</a>
       </div>
     </div>
   );

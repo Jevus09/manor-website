@@ -72,13 +72,13 @@ const ContactScreen = () => {
                         ))}
                     </div>
                     <div>
-                        <h1 className='text-center mt-5'>Contat Us</h1>
+                        <h1 className='text-center mt-5'>Contact Us</h1>
                     </div>
                 </div>
 
 
             {/* CONTACT FORM */}
-            <div className='flex justify-center w-full mb-4'>
+            <div className='flex justify-center w-full bg-[linear-gradient(_#FFffff_40%,_#ebf3fc_50%)]'>
                 <div className='flex justify-center rounded-lg p-5  w-max'>
                     <div>
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />
