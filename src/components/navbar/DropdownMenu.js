@@ -29,9 +29,9 @@ const DropdownMenu = () => {
         <Offcanvas.Body >
           <Nav className='me-auto text-center' >
             <Nav.Link href='/about'>ABOUT US</Nav.Link>
-            <Nav.Link href='#features'>POST-HOSPITAL REHABILITATION</Nav.Link>
-            <Nav.Link href='#pricing'>ADDITIONAL SERVICES</Nav.Link>
-            <Nav.Link href='#home'>SKILLED NURSING CARE</Nav.Link>
+            <Nav.Link href='/rehab-programs'>POST-HOSPITAL REHABILITATION</Nav.Link>
+            <Nav.Link href='/additional-services'>ADDITIONAL SERVICES</Nav.Link>
+            <Nav.Link href='/nursing-care'>SKILLED NURSING CARE</Nav.Link>
             <Nav.Link href='https://www.careerbuilder.com/browse?TNNotFound=true' target='_blank'>EMPLOYMENT</Nav.Link>
             <Nav.Link href='/contact'>CONTACT</Nav.Link>
             <a href='tel:+847-635-4000' className='no-underline text-[#09153d] pb-4'>(847)-635-4000</a>

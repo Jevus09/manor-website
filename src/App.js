@@ -6,6 +6,7 @@ import HomeScreen from './Screens/HomeScreen'
 import ContactScreen from './Screens/ContactScreen';
 import AboutScreen from './Screens/AboutScreen';
 import 'animate.css'
+import Rehabilitaion from './Screens/Rehabilitaion';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomeScreen />} exact />
           <Route path="/contact" element={<ContactScreen />} />
           <Route path="/about" element={<AboutScreen />} />
+          <Route path="/rehab-programs" element={<Rehabilitaion />} />
         </Routes>
       <Footer />
     </Router>
