@@ -15,7 +15,7 @@ const AboutScreen = () => {
             <div className='pb-5'>
                 <div className='h-80 bg-center bg-cover font-bold ' style={{ backgroundImage: `url(${BANNER})`, filter: 'brightness(50%)' }}>
 
-                    <h1 className='absolute inset-0 flex items-center justify-center' >About Us</h1>
+                    <h1 className='pt-32 flex items-center justify-center' >About Us</h1>
 
                 </div>
             </div>
