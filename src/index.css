@@ -36,6 +36,7 @@ code {
 .drop {
   display: flex;
   justify-content: flex-end;
+  flex-wrap: nowrap;
   align-items: center;
 }
 

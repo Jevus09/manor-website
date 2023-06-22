@@ -13,9 +13,11 @@ const AboutScreen = () => {
 
             {/*Banner*/}
             <div className='pb-5'>
-                <div className='h-80 bg-center bg-cover font-bold ' style={{ backgroundImage: `url(${BANNER})`, filter: 'brightness(50%)' }}>
+                <div className=' h-60 md:h-80 bg-center bg-cover font-bold ' style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url(${BANNER})` }}>
 
-                    <h1 className='pt-32 flex items-center justify-center' >About Us</h1>
+                    <div>
+                    <h1 className='pt-32 flex items-center justify-center text-white' >About Us</h1>
+                    </div>
 
                 </div>
             </div>
