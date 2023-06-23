@@ -124,17 +124,17 @@ const Rehabilitation = () => {
           </p>
           <a href='https://abilityrehab.net/' className='no-underline text-blue-500'  >Read More...</a>
         </div>
-        <div className='flex bg-[#09153d] text-white py-12 px-32 justify-evenly'>
-          <div className='flex items-center border'>
-            <img src={VILE}  alt='' className='h-32 rounded-full' />
-            <p className='text-start w-96'>
+        <div className='flex flex-col md:flex-row  bg-[#09153d] text-white py-12 px-12 md:px-32 justify-between'>
+          <div className='flex flex-col md:flex-row  items-center border border-black  rounded-xl bg-[#09153d] mr-6'>
+            <img src={VILE}  alt='' className='h-32 rounded-full hidden sm:block ' />
+            <p className='text-start p-4  '>
             All programs have a wide range of nursing services, 24 hours a day, 7 days a week. Each of the programs for both short term and long term patients has a consulting specialist in that field. <br/>
             For those residents staying with Lee Manor for a short term stay, a Social Service Worker will assist with comprehensive discharge planning, including securing necessary durable medical equipment, home health services, and outpatient rehab services according to your physician’s orders to ensure a safe return home.
             </p>
           </div>
-          <div className='flex flex-col justify-center border px-8'  >
+          <div className='flex flex-col justify-center border border-black w-96  py-4 px-8 rounded-xl bg-[#09153d]'  >
           <h4>Our Therapy Consists Of:</h4>
-          <ul className='text-start list-disc flex flex-col '>
+          <ul className='text-start list-disc flex flex-col text-sm '>
             <li className='' >Physical Therapy</li>
             <li>Occupational Therapy</li>
             <li>Respiratory Therapy</li>
