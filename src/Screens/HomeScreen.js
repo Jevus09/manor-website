@@ -6,6 +6,7 @@ import Greeting from '../components/Greeting'
 import SecondBanner from '../components/SecondBanner'
 import Reasons from '../components/Reasons'
 import Programs from '../components/Programs'
+import Testimonials from '../components/Testimonials'
 
 
 const Homescreen = () => {
@@ -18,6 +19,7 @@ const Homescreen = () => {
       <SecondBanner/>
       <Reasons/>
       <Programs/>
+      <Testimonials/>
     </div>
   )
 }

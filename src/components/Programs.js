@@ -67,14 +67,15 @@ const data = [
 ]
 
 const Programs = () => {
-    return (
-      <div className="h-full pb-20 bg-[#f5efed]">
-        <h1 className="flex justify-center text-xl md:text-4xl py-10 md:py-24">Our Rehabilitation Programs</h1>
-        <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center 2xl:px-72 gap-4  "> {/* Updated line */}
-          {data.map((item) => (
-            <div key={item.id} className="place-content-center w-max "> {/* Updated line */}
-              <a href='/#' className='no-underline' ><Card className="group program-card" style={{ height: '16rem', width: '18rem' }}>
-                {/*  Cover of Card */}
+  return (
+    <div className="h-full pb-20 bg-[#f5efed]">
+      <h1 className="flex justify-center text-xl md:text-4xl py-10 md:py-24">Our Rehabilitation Programs</h1>
+      <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center 2xl:px-72 gap-4">
+        {data.map((item) => (
+          <div key={item.id} className="place-content-center w-max">
+            <a href='/#' className='no-underline'>
+              <Card className="group program-card" style={{ height: '16rem', width: '18rem' }}>
+                {/* Cover of Card */}
                 <Card.Body
                   className="bg-center bg-cover flex flex-col justify-center items-center md:group-hover:hidden"
                   style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url(${item.background})` }}
@@ -83,21 +84,21 @@ const Programs = () => {
                     <p className="text-sm md:text-base text-center font-bold text-white">{item.title}</p>
                   </Card.Text>
                 </Card.Body>
-                {/*  Inside of Card */}
-                <Card.Body style={{backgroundImage: `linear-gradient(#0b22209d, #050f0e9d ), url(${item.background})`}} className="hidden md:group-hover:block bg-cover bg-center  object-cover" >
-                  <Card.Text className='inside-text flex flex-col items-center justify-center text-center font-bold text-white' >
-                    <ListGroup.Item  className='mt-4' >Lorem ipsum dolor sit amet consectetur</ListGroup.Item>
+                {/* Inside of Card */}
+                <Card.Body style={{ backgroundImage: `linear-gradient(#0b22209d, #050f0e9d ), url(${item.background})` }} className="hidden md:group-hover:block bg-cover bg-center  object-cover">
+                  <Card.Text className='inside-text flex flex-col items-center justify-center text-center font-bold text-white'>
+                    <ListGroup.Item className='mt-4'>Lorem ipsum dolor sit amet consectetur</ListGroup.Item>
                     <TbTilde className='text-center text-xl my-2' />
-                    <ListGroup.Item className='text-sm text-[#98bad6] font-thin'> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</ListGroup.Item>
+                    <ListGroup.Item className='text-sm text-[#98bad6] font-thin'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</ListGroup.Item>
                   </Card.Text>
                 </Card.Body>
               </Card>
-              </a>
-            </div>
-          ))}
-        </div>
+            </a>
+          </div>
+        ))}
       </div>
-    );
-  };
-  
-  export default Programs;
+    </div>
+  );
+};
+
+export default Programs;
