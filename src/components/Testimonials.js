@@ -2,6 +2,9 @@ import { Carousel } from "react-bootstrap";
 import WALLY from '../assets/testimonials/wally.png'
 import MARY from '../assets/testimonials/Mary.png'
 import ROB from '../assets/testimonials/rob.jpg'
+import TARA from '../assets/testimonials/tara.png'
+import KING from '../assets/testimonials/king.png'
+import GAYLE from '../assets/testimonials/GAYLE.png'
 
 
 
@@ -27,6 +30,27 @@ function Testimonials() {
             name: 'Robert Nowak',
             rating: '',
             review: "It's a very nice place. I'm visiting a cousin. But, b4 i left, i read all the reviews. And, idk how many i read, but ALOT!! And, everyone's reviews where ALL POSITIVE!! Except for a former employer, WHO LIED AND SAID THEY HAVE ROACHES!! IGNORE HER.",
+        },
+        {
+            id: 4,
+            picture: TARA,
+            name: 'Tara Senato Grencik',
+            rating: '',
+            review: "CLEAN WITH WONDERFUL STAFF❤️You don't get better care than this place! My mother in law loves the food and staff-this place is a godsend🙌",
+        },
+        {
+            id: 5,
+            picture: GAYLE,
+            name: 'Gayle Polzin',
+            rating: '',
+            review: "Thank you for being so kind and caring. I have been here twice.",
+        },
+        {
+            id: 6,
+            picture: KING,
+            name: 'sky King',
+            rating: '',
+            review: "This place makes u positive",
         },
     ]
 

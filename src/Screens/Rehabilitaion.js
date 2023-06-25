@@ -72,10 +72,10 @@ const Rehabilitation = () => {
       {/* Top Banner */}
       <div>
         <div className='flex flex-col items-center justify-center h-72 md:h-96 bg-center bg-cover font-bold ' style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url(${REHAB})` }}>
-        <div className='flex flex-col justify-center text-center font-bold text-white items-center'>
-          <h1 >Rehabilitation Programs</h1>
-          <p className='px-8 md:px-32 xl:px-96 text-white text-xs md:text-base'>Experience comfort and care in our tastefully decorated units and rooms designed specifically for short term rehab patients. At Lee Manor, we prioritize your rehabilitation journey by providing a range of amenities to ensure your comfort throughout the process.</p>
-        </div>
+          <div className='flex flex-col justify-center text-center font-bold text-white items-center'>
+            <h1 >Rehabilitation Programs</h1>
+            <p className='px-8 md:px-32 xl:px-96 text-white text-xs md:text-base'>Experience comfort and care in our tastefully decorated units and rooms designed specifically for short term rehab patients. At Lee Manor, we prioritize your rehabilitation journey by providing a range of amenities to ensure your comfort throughout the process.</p>
+          </div>
         </div>
       </div>
 
@@ -124,25 +124,23 @@ const Rehabilitation = () => {
           </p>
           <a href='https://abilityrehab.net/' className='no-underline text-blue-500' target='_blank' rel='noreferrer'   >Read More...</a>
         </div>
-        <div className='flex flex-col md:flex-row  bg-[#09153d] text-white py-12 px-12 md:px-32 justify-between'>
-          <div className='flex flex-col md:flex-row  items-center border border-black  rounded-xl bg-[#0e2263] mr-6 px-4 '>
-            <img src={VILE}  alt='' className='h-32 rounded-full hidden sm:block ' />
-            <p className='text-start p-4  '>
-            All programs have a wide range of nursing services, 24 hours a day, 7 days a week. Each of the programs for both short term and long term patients has a consulting specialist in that field. <br/>
-            For those residents staying with Lee Manor for a short term stay, a Social Service Worker will assist with comprehensive discharge planning, including securing necessary durable medical equipment, home health services, and outpatient rehab services according to your physician’s orders to ensure a safe return home.
+        <div className='flex flex-col md:flex-row  bg-[#09153d] text-white py-12 px-12 md:px-32 justify-between '>
+          <div className='flex flex-col md:flex-row  items-center border border-black w-full  rounded-xl bg-[#0e2263] mr-6 px-4 my-6 md:my-0 '>
+            <img src={VILE} alt='' className='h-32 rounded-full hidden sm:block ' />
+            <p className='text-start  p-4  '>
+              All programs have a wide range of nursing services, 24 hours a day, 7 days a week. Each of the programs for both short term and long term patients has a consulting specialist in that field. <br />
+              For those residents staying with Lee Manor for a short term stay, a Social Service Worker will assist with comprehensive discharge planning, including securing necessary durable medical equipment, home health services, and outpatient rehab services according to your physician’s orders to ensure a safe return home.
             </p>
           </div>
-          <div className='flex flex-col justify-center border border-black w-96  py-4 px-8 rounded-xl bg-[#0e2263]'  >
-          <h4>Our Therapy Consists Of:</h4>
-          <ul className='text-start list-disc flex flex-col text-sm '>
-            <li className='' >Physical Therapy</li>
-            <li>Occupational Therapy</li>
-            <li>Respiratory Therapy</li>
-            <li>Speech Therapy</li>
-            <li>Wound Care Therapy</li>
-          </ul>
-
-
+          <div className='flex flex-col justify-center border border-black w-full md:w-96  py-4 px-8 rounded-xl bg-[#0e2263]'  >
+            <h4>Our Therapy Consists Of:</h4>
+            <ul className='text-start list-disc flex flex-col text-sm '>
+              <li className='' >Physical Therapy</li>
+              <li>Occupational Therapy</li>
+              <li>Respiratory Therapy</li>
+              <li>Speech Therapy</li>
+              <li>Wound Care Therapy</li>
+            </ul>
           </div>
         </div>
 
