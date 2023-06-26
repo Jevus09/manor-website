@@ -1,5 +1,5 @@
 import React from 'react'
-import HISTORY from '../assets/aboutus/building.PNG'
+import HISTORY from '../assets/aboutus/buildng.PNG'
 import BANNER from '../assets/aboutus/aboutbanner.jpg'
 import LIVING from '../assets/aboutus/livin.jpg'
 import MEDICAL from '../assets/aboutus/Medical.jpg'
@@ -39,11 +39,9 @@ const AboutScreen = () => {
             {/*Banner*/}
             <div className='pb-5'>
                 <div className=' h-60 md:h-80 bg-center bg-cover font-bold ' style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url(${BANNER})` }}>
-
                     <div>
                         <h1 className='pt-32 flex items-center justify-center text-white' >About Us</h1>
                     </div>
-
                 </div>
             </div>
 
@@ -51,25 +49,27 @@ const AboutScreen = () => {
             {/* Top two cards  */}
 
             <div>
-                <div className='flex flex-col justify-center items-center py-12 text-center'>
-                    <h4>Lee Manor: Trusted Home-Like Rehabilitation & Skilled Nursing</h4>
+                <div className='flex flex-col w-full justify-evenly items-center pb-20 text-center'>
+                    <h4 className='text-sm' >Trusted Home-Like Rehabilitation & Skilled Nursing</h4>
                     <h2>Compassionate Care and Comprehensive Therapies for Independence</h2>
                 </div>
-                <div className='flex justify-center items-center h-96' >
-                    <div className='flex flex-col justify-evenly items-center h-96 w-full'>
+                <div className='flex justify-center items center'>
+                <div className='flex flex-col md:flex-row  items-center h-max  ' >
+                    <div className='flex flex-col justify-evenly lg:px-20 items-center h-96 w-full'>
                         <img src={HISTORY} alt='Lee Manor' className='h-52' />
                         <div className='flex flex-col justify-center items-center' >
-                            <h4>Our History</h4>
+                            <h4 className=' py-2' >Our History</h4>
                             <p className='text-xs text-center w-72  ' >Lee Manor Rehabilitation & Skilled Nursing Facility has been a trusted provider of dignified, home-like care for over 30 years. Since opening our doors in 1979, our family-owned facility has prioritized the well-being of our residents, making us a reliable choice for quality care.</p>
                         </div>
                     </div>
-                    <div className='flex flex-col justify-evenly items-center h-96 w-full'>
+                    <div className='flex flex-col justify-evenly items-center lg:px-20 h-max w-full'>
                         <img src={REHAB} alt='rehab' className='h-52' />
                         <div className='flex flex-col justify-center items-center' >
-                            <h4>Our History</h4>
+                            <h4 className='text-center text-base py-2'>Comprehensive Rehabilitation Services</h4>
                             <p className='text-xs text-center w-96  ' >At Lee Manor, we offer sub-acute, short-term rehabilitation services aimed at helping patients regain their independence and return home as quickly as possible. Our dedicated team provides physical, occupational, respiratory, speech, and wound care therapy seven days a week. To enhance the rehabilitation process, we've designed an innovative "Rehab Room" with a model kitchen, bath, and even a car, allowing residents to practice essential skills and build confidence for a successful recovery.</p>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
 
@@ -94,18 +94,8 @@ const AboutScreen = () => {
                         </div>
                     ))}
                 </div>
-
-
             </div>
-
-
-
-
-
-
-
-
-
+            
         </div>
     )
 }
