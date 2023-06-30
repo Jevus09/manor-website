@@ -28,6 +28,7 @@ const DropdownMenu = () => {
         <Offcanvas.Header closeButton></Offcanvas.Header>
         <Offcanvas.Body >
           <Nav className='me-auto text-center' >
+            <Nav.Link href='/' >HOME</Nav.Link>
             <Nav.Link href='/about'>ABOUT US</Nav.Link>
             <Nav.Link href='/rehab-programs'>POST-HOSPITAL REHABILITATION</Nav.Link>
             <Nav.Link href='/additional-services'>ADDITIONAL SERVICES</Nav.Link>
