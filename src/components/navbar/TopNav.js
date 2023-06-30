@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import { AiOutlinePhone } from 'react-icons/ai'
-import logo from '../../assets/logom.jpg'
+import logo from '../../assets/Lee.png'
 import DropdownMenu from './DropdownMenu'
 import BottomNav from './BottomNav'
 
@@ -10,8 +10,8 @@ function HeaderNavbar() {
     <Navbar className='flex flex-col'>
       <Container className='test1'>
         <div className='test w-max'>
-            <Navbar.Brand  href='/' className='text-xs'>
-            <img className='h-20' src={logo} alt='logo' />
+            <Navbar.Brand  href='/' >
+            <img className='h-52' src={logo} alt='logo' />
             </Navbar.Brand>
           <div className='drop'>
             <DropdownMenu />
