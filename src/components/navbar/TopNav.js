@@ -11,7 +11,7 @@ function HeaderNavbar() {
       <Container className='test1'>
         <div className='test w-max'>
             <Navbar.Brand  href='/' >
-            <img className='h-max md:h-24 lg:h-32' src={logo} alt='logo' />
+            <img className='sm:h-20 lg:h-28' src={logo} alt='logo' />
             </Navbar.Brand>
           <div className='drop'>
             <DropdownMenu />
