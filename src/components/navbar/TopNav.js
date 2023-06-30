@@ -7,7 +7,7 @@ import BottomNav from './BottomNav'
 
 function HeaderNavbar() {
   return (
-    <Navbar className='flex flex-col'>
+    <Navbar className='flex flex-col bg-white'>
       <Container className='test1'>
         <div className='test w-max'>
             <Navbar.Brand  href='/' >
