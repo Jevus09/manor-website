@@ -79,7 +79,7 @@ const ContactScreen = () => {
 
             {/* CONTACT FORM */}
             <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_25%,_#ebf3fc_75%)] animate__animated animate__fadeInUp'>
-                <div className='flex justify-center rounded-lg p-5  w-max'>
+                <div className='flex justify-center rounded-lg p-5  w-full'>
                     <div>
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />
                     </div>
@@ -104,7 +104,7 @@ const ContactScreen = () => {
                                 className='textarea max-w-xs bg-white border'
                                 placeholder='Your Message'
                             ></textarea>
-                            <a className='text-center bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' href='/#'>Submit</a>
+                            <a className='text-center flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' href='/#'>Submit</a>
                         </div>
                     </div>
                 </div>
