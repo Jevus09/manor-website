@@ -17,10 +17,12 @@ const Footer = () => {
                     <a className="link link-hover text-[#5e636c]" href='/rehab-programs'>Rehabilitation</a>
                     <a className="link link-hover text-[#5e636c]" href='/additional-services'>Additional Services</a>
                     <a className="link link-hover text-[#5e636c]" href='/nursing-care'>Skilled Nursing Care</a>
-                    <a href='jlcwebdev.com' className="link link-hover text-[#5e636c]"> Designed by JLCWebDev</a>
+                    <a className="link link-hover text-[#5e636c]" href='/privacy-policy'>Privacy Policy</a>
                 </div>
             </footer>
-
+            <div className='flex justify-center text-white text-xs bg-[#15191e]'>
+            <p> Copyright © 2023 LEE MANOR - <a href='http://jlcwebdev.com/' rel="noreferrer" target='_blank' className="link link-hover text-[#5e636c]">Designed by JLC WebDev</a></p>
+                </div>
 
         </div>
     )

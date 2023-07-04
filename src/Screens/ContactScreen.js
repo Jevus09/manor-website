@@ -54,8 +54,6 @@ const ContactScreen = () => {
             </div>
 
             {/* CONTACT CARDS */}
-
-
                 <div className="">
                     <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 xl:px-72">
                         {data.map((item) => (
@@ -83,8 +81,8 @@ const ContactScreen = () => {
                     <div>
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />
                     </div>
-                    <div className='px-3' >
-                        <div className='grid gap-3 '>
+                    <div className='px-3 ' >
+                        <div className='grid gap-3 justify-items-center  '>
                             <input
                                 type='text'
                                 placeholder='Your Name'

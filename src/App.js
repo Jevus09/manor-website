@@ -12,7 +12,7 @@ import Rehabilitaion from './Screens/Rehabilitaion';
 function App() {
   return (
     <Router>
-      <HeaderNavbar />
+      <HeaderNavbar  />
         <Routes>
           <Route path="/" element={<HomeScreen />} exact />
           <Route path="/contact" element={<ContactScreen />} />

@@ -85,7 +85,7 @@ function Testimonials() {
                         <MdOutlineStar/><MdOutlineStar/><MdOutlineStar/><MdOutlineStar/><MdOutlineStar/>
                     </div>
                     <h3 className="w-96 text-xs font-bold px-5 text-center"><RiDoubleQuotesL className='text-xl text-[#3f87b9]'/>{item.review}</h3>
-                    <h5 className="py-2 text-[#3f87b9] ">{item.name}</h5>
+                    <h5 className="py-2 text-[#3f87b9] font-medium ">{item.name}</h5>
                 </div>
             </div>
         </div>
