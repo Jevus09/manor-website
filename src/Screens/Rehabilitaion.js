@@ -151,7 +151,7 @@ const Rehabilitation = () => {
         <div className='flex flex-col items-center justify-center h-60 md:h-80 bg-center bg-cover font-bold ' style={{ backgroundImage: `linear-gradient(#00000085, #00000085), url(${BANNER})` }}>
           <div className='flex flex-col text-white justify-center text-center items-center '>
             <h1>Questions about our rehab services?</h1>
-            <p className='pt-4'>Contact our staff at +1 847 635 4000</p>
+            <p className='pt-4'>Contact our staff at <a className='no-underline text-white' href='tel:+847-635-4000'>+1 847 635 4000</a></p>
           </div>
         </div>
 

@@ -54,7 +54,7 @@ const ContactScreen = () => {
             </div>
 
             {/* CONTACT CARDS */}
-                <div className="">
+                <div className="bg-white">
                     <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 2xl:px-72">
                         {data.map((item) => (
                             <div
@@ -70,7 +70,7 @@ const ContactScreen = () => {
                         ))}
                     </div>
                     <div>
-                        <h1 className='text-center animate__animated animate__fadeInUp pt-5 '>Contact Us</h1>
+                        <h1 className='text-center animate__animated animate__fadeInUp pt-5 mb-0 '>Contact Us</h1>
                     </div>
                 </div>
 
