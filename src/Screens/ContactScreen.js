@@ -55,7 +55,7 @@ const ContactScreen = () => {
 
             {/* CONTACT CARDS */}
                 <div className="">
-                    <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 xl:px-72">
+                    <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 2xl:px-72">
                         {data.map((item) => (
                             <div
                                 key={item.id}
@@ -85,24 +85,25 @@ const ContactScreen = () => {
                         <div className='grid gap-3 justify-items-center  '>
                             <input
                                 type='text'
-                                placeholder='Your Name'
+                                placeholder='Name:'
                                 className='input w-full max-w-xs bg-white border '
                             />
                             <input
                                 type='text'
-                                placeholder='Your Email'
+                                placeholder='E-mail:'
                                 className='input w-full max-w-xs bg-white border'
                             />
                             <input
-                                type='text'
-                                placeholder='Subject'
+                                type='number'
+                                inputMode='numeric'
+                                placeholder='Phone:'
                                 className='input  w-full max-w-xs bg-white border'
                             />
                             <textarea
-                                className='textarea max-w-xs bg-white border'
-                                placeholder='Your Message'
+                                className='textarea max-w-xs bg-white border text-start'
+                                placeholder='Message:'
                             ></textarea>
-                            <a className='text-center flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' href='/#'>Submit</a>
+                            <a className='flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' href='/#'>Submit</a>
                         </div>
                     </div>
                 </div>

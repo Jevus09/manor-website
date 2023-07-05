@@ -20,7 +20,7 @@ function FrontCarousel() {
         <Carousel.Item >
           <div className="d-block w-100 h-128 brightness-75 carimage" style={{ backgroundImage: `url(${second})` }}  ></div>
           <Carousel.Caption >
-            <h1 className=" text-8xl" style={{ fontSize: '6vh', maxHeight: '4vh' }} >Therapy You Can Trust</h1>
+            <h1 className=" " style={{ fontSize: '5vh', maxHeight: '4vh' }} >Therapy You Can Trust</h1>
             <p className="my-8 font-light hidden sm:block">Ability Rehab is a comprehensive rehabilitative contract <br /> provider of Physical, Occupational and Speech-Language <br /> therapy services. </p>
             <a href='/#' className=" border border-line px-3 py-2 rounded-full text-white no-underline hidden sm:inline-block ">Learn More</a>
           </Carousel.Caption>

@@ -50,6 +50,7 @@ code {
 
 .carimage {
   background-size: cover;
+  background-position: right;
 }
 
 .phone {

@@ -65,11 +65,11 @@ function Testimonials() {
             items: 1,
             itemsFit: 'contain' 
         },
-        640: {
+        800: {
             items: 2,
             itemsFit: 'contain'
         },
-        1024: {
+        1180: {
             items: 3,
             itemsFit: 'contain'
         },
@@ -101,7 +101,7 @@ function Testimonials() {
                     <h3>Testimonials</h3>
                     <h1 className="text-center px-2">What Our Patients Says About Us</h1>
                 </div>
-                <div className="flex justify-center items-center w-full ">
+                <div className="flex justify-center items-center w-full 2xl:px-44 ">
                     <AliceCarousel
                         items={items}
                         mouseTracking
