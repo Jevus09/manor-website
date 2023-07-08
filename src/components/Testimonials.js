@@ -77,9 +77,9 @@ function Testimonials() {
 
 
     const items = data.map((item) => (
-        <div key={item.id} className="flex" >
-            <div className=" flex justify-center items-center w-screen py-5">
-                <div className="bg-[white] h-96  md:w-max flex flex-col rounded-xl justify-center items-center ">
+        <div key={item.id} className="flex "  >
+            <div className=" flex justify-center items-center w-screen py-5 " >
+                <div className="bg-[white] h-96  md:w-max flex flex-col rounded-xl justify-center items-center " style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}}>
                     <img src={item.picture} alt={item.name} className="h-12 w-12 rounded-full" />
                     <div className="flex py-4 text-[#fec42d] text-lg">
                         <MdOutlineStar/><MdOutlineStar/><MdOutlineStar/><MdOutlineStar/><MdOutlineStar/>

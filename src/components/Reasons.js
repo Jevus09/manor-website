@@ -37,7 +37,7 @@ const Reasons = () => {
                             key={item.id}
                             className="grid grid-cols-1 text-center place-items-center p-4"
                         >
-                            <img src={item.image} alt='' className='w-96 my-12 px-8 md:px-0' />
+                            <img src={item.image} alt='' className='w-96 my-12 px-8 md:px-0'  />
                             <h3>{item.title}</h3>
                             <TbTilde className='text-[#3f87b9] text-xl my-2' />
                             <p className='text-center w-72'>{item.description}</p>

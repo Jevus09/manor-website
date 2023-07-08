@@ -55,11 +55,11 @@ const ContactScreen = () => {
 
             {/* CONTACT CARDS */}
                 <div className="bg-white">
-                    <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 2xl:px-72">
+                    <div className="grid grid-cols-2 md:grid-cols-4 justify-items-center pt-2 md:py-5 2xl:px-72" >
                         {data.map((item) => (
                             <div
                                 key={item.id}
-                                className='text-center place-items-center py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg animate__animated animate__fadeInUp'
+                                className='text-center place-items-center py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg animate__animated animate__fadeInUp' style={{boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'}}
                             >
                                 <div className="flex items-center justify-center"> {/* Add flex classes */}
                                     <h3 className='text-red-600 text-3xl'>{item.icon}</h3>
@@ -79,7 +79,7 @@ const ContactScreen = () => {
             <div className='flex justify-center w-full bg-[linear-gradient(_#FFFFFF_25%,_#ebf3fc_75%)] animate__animated animate__fadeInUp'>
                 <div className='flex justify-center rounded-lg p-5  w-full'>
                     <div>
-                        <img src={CONTACT} alt='' className='hidden sm:block w-96 ' />
+                        <img src={CONTACT} alt='' className='hidden sm:block w-96 ' style={{boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'}} />
                     </div>
                     <div className='px-3 ' >
                         <div className='grid gap-3 justify-items-center  '>

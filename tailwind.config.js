@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       height: {
         '128': '66vh',
+      },
+      dropShadow: {
+        '5xl': '0px 20px 30px -10px rgb(38, 57, 77)',
       }
     },
   },

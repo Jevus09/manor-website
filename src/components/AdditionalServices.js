@@ -49,14 +49,14 @@ const AdditionalServices = () => {
         <div className="flex justify-center items-center ">
           <div className="flex flex-col md:flex-row items-center gap-4 h-max pb-12">
             <div className="flex flex-col justify-evenly lg:px-20 items-center h-96 w-96 md:w-full ">
-              <img src={PARLOR} alt="Lee Manor" className="h-52" />
+              <img src={PARLOR} alt="Lee Manor" className="h-52" style={{boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'}} />
               <div className="flex flex-col justify-center items-center">
                 <h4 className="py-2">Ice Cream Parlor</h4>
                 <p className="text-xs text-center w-80 font-thin">Tuesday & Thursday 10:00 AM – 1:00 PM</p>
               </div>
             </div>
             <div className="flex flex-col justify-evenly items-center lg:px-20 w-96 md:w-full">
-              <img src={BEAUTY} alt="rehab" className="h-52" />
+              <img src={BEAUTY} alt="rehab" className="h-52" style={{boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'}} />
               <div className="flex flex-col justify-center items-center">
                 <h4 className="text-center py-2">Beauty/Barber Shop</h4>
                 <p className="text-xs text-center w-80 font-thin">Monday – Friday 1:30 PM – 3:30 PM/4:00 PM – 5:30 <br/> Saturday & Sunday 1:00 PM – 2:00 PM/3:00 PM – 3:30 PM</p>
