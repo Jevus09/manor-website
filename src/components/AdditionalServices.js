@@ -42,22 +42,24 @@ const data = [
 const AdditionalServices = () => {
   return (
     <div className="bg-[#ebf3fc]">
+
+
       {/* Top two cards */}
       <div className="pt-12">
-        <div className="flex justify-center items-center">
-          <div className="flex flex-col md:flex-row items-center h-max">
-            <div className="flex flex-col justify-evenly lg:px-20 items-center h-96 w-full">
+        <div className="flex justify-center items-center ">
+          <div className="flex flex-col md:flex-row items-center gap-4 h-max pb-12">
+            <div className="flex flex-col justify-evenly lg:px-20 items-center h-96 w-96 md:w-full ">
               <img src={PARLOR} alt="Lee Manor" className="h-52" />
               <div className="flex flex-col justify-center items-center">
                 <h4 className="py-2">Ice Cream Parlor</h4>
-                <p className="text-xs text-center w-72">Tuesday & Thursday 10:00 AM – 1:00 PM</p>
+                <p className="text-xs text-center w-80 font-thin">Tuesday & Thursday 10:00 AM – 1:00 PM</p>
               </div>
             </div>
-            <div className="flex flex-col justify-evenly items-center lg:px-20 w-full h-96">
+            <div className="flex flex-col justify-evenly items-center lg:px-20 w-96 md:w-full">
               <img src={BEAUTY} alt="rehab" className="h-52" />
               <div className="flex flex-col justify-center items-center">
-                <h4 className="text-center text-base py-2">Beauty/Barber Shop</h4>
-                <p className="text-xs text-center w-96">Monday – Friday 1:30 PM – 3:30 PM/4:00 PM – 5:30 <br/> Saturday & Sunday 1:00 PM – 2:00 PM/3:00 PM – 3:30 PM</p>
+                <h4 className="text-center py-2">Beauty/Barber Shop</h4>
+                <p className="text-xs text-center w-80 font-thin">Monday – Friday 1:30 PM – 3:30 PM/4:00 PM – 5:30 <br/> Saturday & Sunday 1:00 PM – 2:00 PM/3:00 PM – 3:30 PM</p>
               </div>
             </div>
           </div>
@@ -66,12 +68,12 @@ const AdditionalServices = () => {
 
       {/* Five cards */}
       <div className="pb-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 px-8 gap-4 lg:gap-2 justify-center items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 px-8 gap-4 lg:gap-2">
           {data.map((item) => (
             <div
               key={item.id}
-              className="flex flex-col justify-center h-80 md:h-96 px-4 bg-white rounded-xl md:text-center"
-              style={{boxShadow: 'rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;'}}
+              className="flex flex-col justify-center h-80 md:h-96 px-4 bg-white rounded-xl md:text-center md:hover:scale-110 duration-500"
+              style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}}
             >
               <div className="pt-10 w-max">
                 <h2 className="bg-[#f97777] p-3 text-white rounded-xl">{item.icon}</h2>

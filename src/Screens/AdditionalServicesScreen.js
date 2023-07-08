@@ -1,8 +1,7 @@
 import React from 'react'
 import BANNER from '../assets/additionalServices/services.jpg'
 import {GiFruitBowl} from 'react-icons/gi'
-import {FcBusinesswoman} from 'react-icons/fc'
-import {MdOutlineLocalPharmacy} from 'react-icons/md'
+import {MdOutlineLocalPharmacy, MdEmojiPeople} from 'react-icons/md'
 import {ImLab} from 'react-icons/im'
 import {FaXRay} from 'react-icons/fa'
 import {GiUltrasound} from 'react-icons/gi'
@@ -18,7 +17,7 @@ const data = [
   {
     id: 2,
     title: 'Social Work Services',
-    icon: <FcBusinesswoman/>,
+    icon: <MdEmojiPeople/>,
   },
   {
     id: 3,
