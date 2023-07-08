@@ -3,7 +3,7 @@ import { BsTelephonePlus } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsClock } from 'react-icons/bs';
 import CONTACT from '../assets/contact/contacus.jpg';
-import Map from '../components/Map';
+// import Map from '../components/Map';
 
 
 const data = [
