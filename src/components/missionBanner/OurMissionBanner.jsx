@@ -11,8 +11,8 @@ const OurMissionBanner = () => {
           <div className='textarea bg-white'>
             <h1 className='missionText'>'' Our Mission</h1>
             <p>
-           We start by making the patient assessment and follow through. Directing the Home Care Program every step of the way. </p>
-           - Jane Smith, RN
+            Lee Manor is committed to providing services which promote the highest standards of well-being in a safe, comfortable, community-integrated environment catered to the unique needs of our residents while promoting each resident's dignity and individuality.
+            </p>
           </div>
         </div>
       </div>
