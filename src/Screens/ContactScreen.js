@@ -1,10 +1,10 @@
-// import { useMemo } from 'react';
 import { GoLocation } from 'react-icons/go';
 import { BsTelephonePlus } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsClock } from 'react-icons/bs';
-// import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 import CONTACT from '../assets/contact/contacus.jpg';
+import Map from '../components/Map';
+
 
 const data = [
     {
@@ -35,12 +35,6 @@ const data = [
 
 
 const ContactScreen = () => {
-    //   const { isLoaded, } = useLoadScript({
-    //     googleMapsApiKey: process.env.REACT_APP_API_KEY,
-
-    //   });
-
-    //   if(!isLoaded) return <span className="loading loading-spinner loading-lg"></span> 
     return (
         <div >
             {/* MAP */}
@@ -50,8 +44,8 @@ const ContactScreen = () => {
                         <iframe src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_API_KEY}&q=1301 Lee St, Des Plaines, IL 60018`} height="450" className='w-full' frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0" title='map'></iframe>
                     </div>
                 </div>
-
             </div>
+            {/* <Map/> */}
 
             {/* CONTACT CARDS */}
                 <div className="bg-white">
@@ -111,17 +105,6 @@ const ContactScreen = () => {
         </div>
     );
 };
-
-
-// function Map() {
-//     const center = useMemo(() => ({ lat: 42.033363, lng: -87.883400 }), []);
-//   return (
-//     <GoogleMap zoom={10} center={center}>
-//         <Marker position={center} />
-//     </GoogleMap>
-//   );
-// }
-
 
 
 export default ContactScreen;
