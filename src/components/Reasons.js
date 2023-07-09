@@ -3,6 +3,7 @@ import { TbTilde } from 'react-icons/tb';
 import RES from '../assets/reasons/resident.jpg'
 import EXP from '../assets/reasons/experience.jpg'
 import STAFF from '../assets/reasons/staff.jpg'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 
 const Reasons = () => {
@@ -30,14 +31,18 @@ const Reasons = () => {
     return (
         <div>
             <div className="h-full bg-[#fff9f6] pb-5">
+                <AnimationOnScroll animateIn="animate__fadeInUp" animateOnce={true}>
                 <h1 className="flex items-center justify-center pt-16 md:pb-12">Why Lee Manor?</h1>
+                </AnimationOnScroll>
                 <div className="flex flex-col md:flex-row md:justify-center">
                     {data.map((item) => (
                         <div
                             key={item.id}
                             className="grid grid-cols-1 text-center place-items-center p-4"
                         >
+                            <AnimationOnScroll animateIn='animate__fadeInBottomLeft' animateOnce={true} >
                             <img src={item.image} alt='' className='w-96 my-12 px-8 md:px-0'  />
+                            </AnimationOnScroll>
                             <h3>{item.title}</h3>
                             <TbTilde className='text-[#3f87b9] text-xl my-2' />
                             <p className='text-center w-72'>{item.description}</p>

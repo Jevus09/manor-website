@@ -1,12 +1,12 @@
 import React from 'react'
-import missionImg from '../../assets/missingimg.jpeg';
+import missionImg from '../../assets/missingimg.png';
 import './missionBanner.css'
 
 const OurMissionBanner = () => {
 
   return (
     <div className='main h-80 bg-white  ' >
-        <img className='missionImg' style={{height: '30vh'}} src={missionImg} alt="" />
+        <img className='missionImg h-full' style={{}} src={missionImg} alt="" />
         <div className="text">
           <div className='textarea bg-white'>
             <h1 className='missionText'>'' Our Mission</h1>

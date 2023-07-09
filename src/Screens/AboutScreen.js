@@ -5,6 +5,7 @@ import LIVING from '../assets/aboutus/livin.jpg'
 import MEDICAL from '../assets/aboutus/Medical.jpg'
 import REHAB from '../assets/aboutus/Rehabilitation.jpg'
 import SPECI from '../assets/aboutus/Specialized.jpg'
+import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 
 
@@ -49,7 +50,7 @@ const AboutScreen = () => {
             {/* Top two cards  */}
 
             <div>
-                <div className='flex flex-col w-full justify-evenly items-center pb-20 text-center'>
+            <div className='flex flex-col w-full justify-evenly items-center pb-20 text-center'>
                     <h4 className='text-sm' >Trusted Home-Like Rehabilitation & Skilled Nursing</h4>
                     <h2>Compassionate Care and Comprehensive Therapies for Independence</h2>
                 </div>
@@ -78,14 +79,18 @@ const AboutScreen = () => {
             {/* Bottom three Cards */}
 
             <div className='bg-[#f5efed]'>
-                <div className='flex flex-col justify-center items-center py-12 text-center' >
+            <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+            <div className='flex flex-col justify-center items-center py-12 text-center' >
                     <h4 className='text-sm md:text-base' >Caring Haven for Alzheimer's & Dementia Patients</h4>
                     <h2>Providing Specialized Care, Comfort and Community</h2>
                 </div>
+                </AnimationOnScroll>
                 <div className='flex flex-col md:flex-row' >
                     {data.map((item) => (
                         <div key={item.id} className='flex flex-col justify-evenly items-center h-96 w-full'>
+                            <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
                             <img src={item.image} alt={item.title} className='h-52' style={{boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'}} />
+                            </AnimationOnScroll>
                             <div className='flex flex-col justify-center items-center' >
                                 <h4>{item.title}</h4>
                                 <p className='text-xs text-center w-72  ' >{item.desc}</p>
