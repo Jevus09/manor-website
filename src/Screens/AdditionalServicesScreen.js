@@ -56,8 +56,8 @@ const AdditionalServicesScreen = () => {
       </div>
 
       {/* services */}
-      <div className='flex flex-col items-center justify-center bg-[#09153d] py-2 '>
-        <div className='grid grid-cols-2 lg:grid-cols-6 gap-4 '>
+      <div className='flex flex-col items-center justify-center bg-[#09153d] py-2 w-screen'>
+        <div className='grid grid-cols-2 lg:grid-cols-6 '>
           {data.map((item) => (
             <div key={item.id} className='text-white w-44 text-center p-4'>
               <h3 className='flex items-center justify-center text-xl8'>{item.icon}</h3>
