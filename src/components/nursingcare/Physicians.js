@@ -30,7 +30,7 @@ const Physicians = () => {
                 {Data.map((item) =>
                     item.id % 2 === 0 ? (
                         <div key={item.id} className='w-11/12 h-16 flex justify-between items-center bg-white text-end md:hover:scale-110 duration-500 rounded-xl ' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }}>
-                            <div className='h-full w-1/6 lg:w-2/6 2xl:w-1/6 flex justify-center items-center bg-amber-500 text-white rounded-xl  '>
+                            <div className='h-full w-1/5 lg:w-2/6 2xl:w-1/6 flex justify-center items-center bg-amber-500 text-white rounded-xl  '>
                                 <h4 className=''>{item.icon}</h4>
                              </div>
                             <div className='h-full flex items-center w-4/6'  >
@@ -42,7 +42,7 @@ const Physicians = () => {
                             <div className='h-full flex items-center w-4/6'>
                                 <p className='w-full pl-6 '>{item.name}</p>
                             </div>
-                            <div className='h-full w-1/6 lg:w-2/6 2xl:w-1/6  flex justify-center items-center bg-blue-500 text-white rounded-xl' style={{backgroundImage: `url(${BOX})`}}>
+                            <div className='h-full  w-1/5 lg:w-2/6 2xl:w-1/6  flex justify-center items-center bg-blue-500 text-white rounded-xl' style={{backgroundImage: `url(${BOX})`}}>
 
                                 <h4 className='' >{item.icon}</h4>
                             </div>
