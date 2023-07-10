@@ -1,5 +1,4 @@
 import React from 'react'
-import {  PiShootingStarDuotone } from 'react-icons/pi'
 import { BsFillLungsFill, BsBandaidFill, BsFillClockFill } from 'react-icons/bs'
 import { TbPhysotherapist } from 'react-icons/tb'
 import { GiBrain, GiSwapBag, GiHospitalCross, GiMedicalThermometer, GiMedicalDrip } from 'react-icons/gi'
