@@ -1,9 +1,9 @@
-import WALLY from '../assets/testimonials/wally.png'
-import MARY from '../assets/testimonials/Mary.png'
-import ROB from '../assets/testimonials/rob.png'
-import TARA from '../assets/testimonials/tara.png'
-import KING from '../assets/testimonials/king.png'
-import GAYLE from '../assets/testimonials/GAYLE.png'
+import WALLY from '../assets/testimonials/wally.webp'
+import MARY from '../assets/testimonials/Mary.webp'
+import ROB from '../assets/testimonials/rob.webp'
+import TARA from '../assets/testimonials/tara.webp'
+import KING from '../assets/testimonials/king.webp'
+import GAYLE from '../assets/testimonials/GAYLE.webp'
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';

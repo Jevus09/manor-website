@@ -81,7 +81,7 @@ const Rehabilitation = () => {
             backgroundImage: `linear-gradient(#00000085, #00000085), url(${REHAB})`,
           }}
         >
-          <div className='flex flex-col justify-center text-center font-bold text-white items-center'>
+          <div className='flex flex-col justify-center text-center font-bold text-white items-center '>
             <h1>Rehabilitation Programs</h1>
             <p className='px-8 md:px-32 xl:px-96 text-white text-xs md:text-base'>
               Experience comfort and care in our tastefully decorated units and
@@ -113,17 +113,17 @@ const Rehabilitation = () => {
         <img src={GIF} alt='' />
       </div>
       <div className='flex flex-col text-center justify-center '>
-        <div className='py-5'>
+        <div className='py-12'>
           <h1 className='px-2'>
-            SHORT-TERM REHAB SPECIALITY PROGRAMS AND SERVICES
+            SHORT-TERM REHAB SPECIALITY PROGRAMS
           </h1>
         </div>
         <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
         <RehabCards  />
         </AnimationOnScroll>
-        <div className='flex justify-center items-center py-6  '>
+        <div className='flex justify-center items-center py-16  '>
           <div
-            className='bg-[#f5efed]w-5/6 md:w-4/6 py-5 flex flex-col justify-center items-center'
+            className='bg-[#f5efed]w-5/6 md:w-4/6 py-5 flex flex-col justify-center items-center rounded-md '
             style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }}
           >
             <p className=' w-4/6 '>

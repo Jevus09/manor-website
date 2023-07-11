@@ -64,11 +64,11 @@ const RehabCards = () => {
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4   justify-items-center gap-6 xl:px-36'>
             {data.map((item) => (
-                <div key={item.id} className=' w-5/6 md:w-80 lg:w-60 h-44 flex flex-col justify-center items-center rounded-2xl md:hover:scale-110 duration-500' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}}>
+                <div key={item.id} className=' w-5/6 md:w-80 lg:w-60 h-44 flex flex-col justify-center items-center rounded-2xl md:hover:scale-110 duration-500 bg-[#f97777] text-white' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}}>
                     <div className='w-max pt-2'>
-                        <h4 className='bg-[#f97777] p-3 text-white rounded-xl'>{item.icon}</h4>
+                        <h4 className='p-3 rounded-xl'>{item.icon}</h4>
                     </div>
-                    <p className='text-sm px-4 h-32 font-thin'>{item.desc}</p>
+                    <p className='text-sm px-4 h-32'>{item.desc}</p>
                 </div>
             ))}
         </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card, ListGroup } from 'react-bootstrap';
-import HOSPICE from '../assets/programs/HOSPICE.jpg'
-import IV from '../assets/programs/ivtherapy.jpg'
-import ORTHO from '../assets/programs/ortho.jpg'
-import UROLOGY from '../assets/programs/UROLOGY.jpg'
-import WOUND from '../assets/programs/WOUND.jpg'
-import NEUROLOGY from '../assets/programs/NEUROLOGY.jpg'
+import HOSPICE from '../assets/programs/hospice.webp'
+import IV from '../assets/programs/ivtherapy.webp'
+import ORTHO from '../assets/programs/ortho.webp'
+import UROLOGY from '../assets/programs/uro.webp'
+import WOUND from '../assets/programs/wound.webp'
+import NEUROLOGY from '../assets/programs/neuro.webp'
 import { TbTilde } from 'react-icons/tb';
 
 
@@ -85,7 +85,7 @@ const Programs = () => {
                   </Card.Text>
                 </Card.Body>
                 {/* Inside of Card */}
-                <Card.Body style={{ backgroundImage: `linear-gradient(#0b22209d, #050f0e9d ), url(${item.background})` }} className="hidden md:group-hover:block bg-cover bg-center  object-cover">
+                <Card.Body  className="hidden md:group-hover:block bg-[#3f87b9]">
                   <Card.Text className='inside-text flex flex-col items-center justify-center text-center font-bold text-white'>
                     <ListGroup.Item className='mt-4'>Lorem ipsum dolor sit amet consectetur</ListGroup.Item>
                     <TbTilde className='text-center text-xl my-2' />

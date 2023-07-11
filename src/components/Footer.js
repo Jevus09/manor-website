@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
     return (
-        <div className='' >
-            <footer className="footer p-10 bg-base-300 text-base-content footer-test flex justify-between md:justify-evenly items-center">
+        <div data-theme="dark" >
+            <footer className="footer p-10 bg-base-300 text-base-content footer-test flex justify-center gap-20 md:gap-60 items-center">
             <div>
                     <span className="footer-title text-white">Company</span>
                     <a className="link link-hover text-[#5e636c]" href='/'>Home</a>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <a className="link link-hover text-[#5e636c]" href='/privacy-policy'>Privacy Policy</a>
                 </div>
             </footer>
-            <div className='flex justify-center text-white text-xs bg-[#15191e]'>
+            <div className='flex bg-[#15191e] justify-center text-white text-xs '>
             <p> Copyright © 2023 LEE MANOR - <a href='http://jlcwebdev.com/' rel="noreferrer" target='_blank' className="link link-hover text-[#5e636c]">Designed by JLC WebDev</a></p>
                 </div>
 

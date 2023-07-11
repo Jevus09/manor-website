@@ -21,15 +21,15 @@ const clickHandler = () => {
     <div>        
       <FrontCarousel />
       <Services />
-      <div>
+
       <OurMissionBanner/>
       <Greeting/>
       <SecondBanner/>
       <Reasons/>
       <Programs/>
       <Testimonials/>
-      <button className='fixed bottom-3 right-2 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500' onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
-      </div>
+      <button className='fixed bottom-4 right-4 md:bottom-12 md:right-20 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500' onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
+
     </div>
   )
 }

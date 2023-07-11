@@ -2,7 +2,7 @@ import { GoLocation } from 'react-icons/go';
 import { BsTelephonePlus } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsClock } from 'react-icons/bs';
-import CONTACT from '../assets/contact/contacus.jpg';
+import CONTACT from '../assets/contact/contactus.webp';
 // import Map from '../components/Map';
 
 
@@ -23,7 +23,7 @@ const data = [
         id: 3,
         icon: <AiOutlineMail />,
         title: 'Email Us',
-        description: 'Admin@example.com',
+        description: 'admissions@leemanor.com',
     },
     {
         id: 4,
@@ -55,7 +55,7 @@ const ContactScreen = () => {
                                 key={item.id}
                                 className='text-center place-items-center py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg animate__animated animate__fadeInUp' style={{boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px'}}
                             >
-                                <div className="flex items-center justify-center"> {/* Add flex classes */}
+                                <div className="flex items-center justify-center"> 
                                     <h3 className='text-red-600 text-3xl'>{item.icon}</h3>
                                 </div>
                                 <h3 className='py-3 text-lg hidden sm:block'>{item.title}</h3>
@@ -76,7 +76,7 @@ const ContactScreen = () => {
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' style={{boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px'}} />
                     </div>
                     <div className='px-3 ' >
-                        <div className='grid gap-3 justify-items-center  '>
+                        <div className='w-60 grid gap-3 justify-items-center  '>
                             <input
                                 type='text'
                                 placeholder='Name:'
@@ -94,7 +94,7 @@ const ContactScreen = () => {
                                 className='input  w-full max-w-xs bg-white border'
                             />
                             <textarea
-                                className='textarea max-w-xs bg-white border text-start'
+                                className='textarea w-full max-w-xs bg-white border text-start'
                                 placeholder='Message:'
                             ></textarea>
                             <a className='flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' href='/#'>Submit</a>

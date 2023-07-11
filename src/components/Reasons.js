@@ -40,7 +40,7 @@ const Reasons = () => {
                             key={item.id}
                             className="grid grid-cols-1 text-center place-items-center p-4"
                         >
-                            <AnimationOnScroll animateIn='animate__fadeInBottomLeft' animateOnce={true} >
+                            <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true} >
                             <img src={item.image} alt='' className='w-96 my-12 px-8 md:px-0'  />
                             </AnimationOnScroll>
                             <h3>{item.title}</h3>
