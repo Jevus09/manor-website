@@ -1,7 +1,7 @@
 import React from 'react';
-import Patient from '../assets/greetings/parient.jpg';
-import Nurse from '../assets/greetings/nurse.jpg';
-import Agency from '../assets/greetings/agency.jpg';
+import Patient from '../assets/greetings/parient.webp';
+import Nurse from '../assets/greetings/nurse1.webp';
+import Agency from '../assets/greetings/agency.webp';
 import { TbTilde } from 'react-icons/tb';
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 

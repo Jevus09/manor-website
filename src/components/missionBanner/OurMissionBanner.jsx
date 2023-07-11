@@ -1,5 +1,5 @@
 import React from 'react'
-import missionImg from '../../assets/missingimg.png';
+import missionImg from '../../assets/mission.webp';
 import './missionBanner.css'
 
 const OurMissionBanner = () => {

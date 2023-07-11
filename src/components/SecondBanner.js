@@ -1,5 +1,5 @@
 import React from 'react';
-import DOC from '../assets/doctor.jpg';
+import DOC from '../assets/doc.webp';
 
 const SecondBanner = () => {
   return (

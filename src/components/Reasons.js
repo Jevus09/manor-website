@@ -1,8 +1,8 @@
 import React from 'react'
 import { TbTilde } from 'react-icons/tb';
-import RES from '../assets/reasons/resident.jpg'
-import EXP from '../assets/reasons/experience.jpg'
-import STAFF from '../assets/reasons/staff.jpg'
+import RES from '../assets/reasons/resident.webp'
+import EXP from '../assets/reasons/experience.webp'
+import STAFF from '../assets/reasons/staff.webp'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 
