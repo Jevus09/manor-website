@@ -7,19 +7,29 @@ import SecondBanner from '../components/SecondBanner'
 import Reasons from '../components/Reasons'
 import Programs from '../components/Programs'
 import Testimonials from '../components/Testimonials'
+import {TiArrowUpOutline} from 'react-icons/ti'
 
 
 const Homescreen = () => {
+
+  
+const clickHandler = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+}
+
   return (
     <div>        
       <FrontCarousel />
-      <Services/>
+      <Services />
+      <div>
       <OurMissionBanner/>
       <Greeting/>
       <SecondBanner/>
       <Reasons/>
       <Programs/>
       <Testimonials/>
+      <button className='fixed bottom-3 right-2 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500' onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
+      </div>
     </div>
   )
 }

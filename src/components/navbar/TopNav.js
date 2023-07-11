@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
 import { ImFacebook } from 'react-icons/im'
-import logo from '../../assets/Lee.JPG'
+import logo from '../../assets/Lee.webp'
 import DropdownMenu from './DropdownMenu'
 import BottomNav from './BottomNav'
 
