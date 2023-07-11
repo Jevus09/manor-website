@@ -1,10 +1,10 @@
 import React from 'react'
-import HISTORY from '../assets/aboutus/buildng.PNG'
-import BANNER from '../assets/aboutus/aboutbanner.jpg'
-import LIVING from '../assets/aboutus/livin.jpg'
-import MEDICAL from '../assets/aboutus/Medical.jpg'
-import REHAB from '../assets/aboutus/Rehabilitation.jpg'
-import SPECI from '../assets/aboutus/Specialized.jpg'
+import HISTORY from '../assets/aboutus/buildng.webp'
+import BANNER from '../assets/aboutus/aboutbanner.webp'
+import LIVING from '../assets/aboutus/livin.webp'
+import MEDICAL from '../assets/aboutus/Medical.webp'
+import REHAB from '../assets/aboutus/Rehabilitation.webp'
+import SPECI from '../assets/aboutus/Specialized.webp'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 

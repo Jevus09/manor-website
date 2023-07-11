@@ -1,5 +1,5 @@
 import React from 'react'
-import BANNER from '../assets/additionalServices/services.jpg'
+import BANNER from '../assets/additionalServices/services.webp'
 import {GiFruitBowl} from 'react-icons/gi'
 import {MdOutlineLocalPharmacy, MdEmojiPeople} from 'react-icons/md'
 import {ImLab} from 'react-icons/im'

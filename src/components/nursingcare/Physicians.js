@@ -1,6 +1,6 @@
 import React from 'react'
 import { Data } from './Data'
-import BOX from '../../assets/swaure.PNG'
+
 
 
 
@@ -42,7 +42,7 @@ const Physicians = () => {
                             <div className='h-full flex items-center w-4/6'>
                                 <p className='w-full pl-6 '>{item.name}</p>
                             </div>
-                            <div className='h-full  w-1/5 lg:w-2/6 2xl:w-1/6  flex justify-center items-center bg-blue-500 text-white rounded-xl' style={{backgroundImage: `url(${BOX})`}}>
+                            <div className='h-full  w-1/5 lg:w-2/6 2xl:w-1/6  flex justify-center items-center bg-blue-500 text-white rounded-xl'>
 
                                 <h4 className='' >{item.icon}</h4>
                             </div>

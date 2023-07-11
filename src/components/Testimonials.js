@@ -1,6 +1,6 @@
 import WALLY from '../assets/testimonials/wally.png'
 import MARY from '../assets/testimonials/Mary.png'
-import ROB from '../assets/testimonials/rob.jpg'
+import ROB from '../assets/testimonials/rob.png'
 import TARA from '../assets/testimonials/tara.png'
 import KING from '../assets/testimonials/king.png'
 import GAYLE from '../assets/testimonials/GAYLE.png'

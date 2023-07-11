@@ -1,5 +1,5 @@
 import React from 'react'
-import Nurse from '../assets/NursingCare/nurse.jpg'
+import Nurse from '../assets/NursingCare/nurse.webp'
 import Services from '../components/nursingcare/Services'
 import Physicians from '../components/nursingcare/Physicians'
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import BANNER from '../assets/rehab/banner.jpg'
-import REHAB from '../assets/rehab/rehab.jpg'
+import BANNER from '../assets/rehab/Rehab-banner.webp'
+import REHAB from '../assets/rehab/rehab.webp'
 import GIF from '../assets/rehab/rehab.gif'
 import { IoIosLaptop } from 'react-icons/io'
 import { BiFridge } from 'react-icons/bi'
