@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import FrontCarousel from '../components/FrontCarousel'
 import Services from '../components/Services'
 import OurMissionBanner from '../components/missionBanner/OurMissionBanner'
@@ -10,8 +10,28 @@ import Testimonials from '../components/Testimonials'
 import {TiArrowUpOutline} from 'react-icons/ti'
 
 
-const Homescreen = () => {
 
+const Homescreen = () => {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    if (
+      document.body.scrollTop > 500 ||
+      document.documentElement.scrollTop > 500
+    ) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  }
+
+  useEffect(() => {
+    // Listen for Scrolling Event
+    window.addEventListener("scroll", toggleVisible, true);
+    return () => {
+      window.removeEventListener("scroll", toggleVisible, true);
+    }
+  }, []);
   
 const clickHandler = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' })
@@ -28,7 +48,9 @@ const clickHandler = () => {
       <Reasons/>
       <Programs/>
       <Testimonials/>
-      <button className='fixed bottom-4 right-4 md:bottom-12 md:right-20 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500' onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
+
+        <button className={visible && 'fixed bottom-4 right-4 md:bottom-12 md:right-16 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500' } onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
+
 
     </div>
   )
