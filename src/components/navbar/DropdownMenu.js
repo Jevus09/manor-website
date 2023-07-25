@@ -35,7 +35,7 @@ const DropdownMenu = () => {
             <Nav.Link href='/rehab-programs' className='py-2'>POST-HOSPITAL REHABILITATION</Nav.Link>
             <Nav.Link href='/additional-services' className='py-2'>ADDITIONAL SERVICES</Nav.Link>
             <Nav.Link href='/nursing-care' className='py-2'>SKILLED NURSING CARE</Nav.Link>
-            <Nav.Link href='https://www.careerbuilder.com/browse?TNNotFound=true' target='_blank' className='py-2'>EMPLOYMENT</Nav.Link>
+            <Nav.Link href='https://www.indeed.com/cmp/Meadowbrook-Bolingbrook/jobs/l-Des-Plaines,-IL' target='_blank' className='py-2'>EMPLOYMENT</Nav.Link>
             <Nav.Link href='/contact' className='py-2'>CONTACT</Nav.Link>
             <a href='tel:+847-635-4000' className='no-underline bg-[#09153d] text-white p-3 w-64 rounded-full'>(847)-635-4000</a>
             <div className='flex gap-5 justify-center pt-4'>
