@@ -1,10 +1,11 @@
 import React from 'react'
 import PARLOR from '../assets/additionalServices/parlor.jpg'
 import BEAUTY from '../assets/additionalServices/beauty.jpg'
-import { MdOutlineSportsGymnastics, MdOutlineFitnessCenter } from 'react-icons/md'
+import { MdOutlineSportsGymnastics, } from 'react-icons/md'
 import { RiComputerFill } from 'react-icons/ri'
 import { FaBusAlt, FaDog } from 'react-icons/fa'
 import { IoIosPeople } from 'react-icons/io'
+import { AiOutlineMedicineBox } from 'react-icons/ai'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 
 const data = [
@@ -34,9 +35,9 @@ const data = [
   },
   {
     id: 5,
-    service: 'Fitness Center',
-    icon: <MdOutlineFitnessCenter />,
-    desc: 'This service would provide residents with access to a dedicated fitness facility equipped with exercise machines, weights, and other fitness equipment. It would offer a convenient and accessible space for residents to engage in physical activities and maintain their health and well-being.',
+    service: 'Medic-Aid Services',
+    icon: <AiOutlineMedicineBox />,
+    desc: 'Onsite business Office Manager that can assist with Medicaid process',
   },
   {
     id: 6,
@@ -93,7 +94,7 @@ const AdditionalServices = () => {
             >
 
               <div className='pt-10 w-max'>
-                <h2 className='bg-[#f97777] p-3 text-white rounded-xl'>
+                <h2 className='bg-[#3e72ac] p-3 text-white rounded-xl'>
                   {item.icon}
                 </h2>
               </div>

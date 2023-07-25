@@ -1,9 +1,9 @@
 import { GoLocation } from 'react-icons/go';
 import { BsTelephonePlus } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
-import { BsClock } from 'react-icons/bs';
+import { FaFax } from 'react-icons/fa';
 import CONTACT from '../assets/contact/contactus.webp';
-// import Map from '../components/Map';
+
 
 
 const data = [
@@ -21,22 +21,22 @@ const data = [
     },
     {
         id: 3,
-        icon: <AiOutlineMail />,
-        title: 'Email Us',
-        description: 'admissions@leemanor.com',
+        icon: <FaFax />,
+        title: 'Fax Number',
+        description: '847-827-5796',
+
     },
     {
         id: 4,
-        icon: <BsClock />,
-        title: 'Working Hours',
-        description: 'Mon - Sat: 9:00 - 5:00',
+        icon: <AiOutlineMail />,
+        title: 'Email Us',
+        description: 'admissions@leemanor.com',
     },
 ];
 
 
 const ContactScreen = () => {
 
-    const center = '42.029507646164156,-87.8934861419573'
     return (
         <div >
             {/* MAP */}
@@ -47,7 +47,6 @@ const ContactScreen = () => {
                     src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_API_KEY}&center=42.029507646164156,-87.8934861419573&zoom=15&q=place_id:ChIJU4ev4ae3D4gR00c-GPjM4i8&`} 
                     height="450" 
                     className='w-full' 
-                    center={center}
                     frameborder="0" 
                     style={{ border: 0 }} 
                     allowfullscreen="" 
@@ -58,7 +57,7 @@ const ContactScreen = () => {
                     </div>
                 </div>
             </div>
-            {/* <Map/> */}
+
 
             {/* CONTACT CARDS */}
             <div className="bg-white">
