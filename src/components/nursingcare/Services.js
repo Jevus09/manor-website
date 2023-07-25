@@ -1,8 +1,8 @@
 import React from 'react'
 import { BsFillLungsFill, BsBandaidFill, BsFillClockFill } from 'react-icons/bs'
 import { TbPhysotherapist } from 'react-icons/tb'
-import { GiBrain, GiSwapBag, GiHospitalCross, GiMedicalThermometer, GiMedicalDrip } from 'react-icons/gi'
-import { BiSolidBone } from 'react-icons/bi'
+import { GiBrain, GiSwapBag, GiHospitalCross, GiHeavyCollar, GiMedicalDrip, GiBrokenBone } from 'react-icons/gi'
+
 
 
 
@@ -29,7 +29,7 @@ const data = [
     {
         id: 4,
         desc: 'Tracheostomy Care',
-        icon: <GiMedicalThermometer />,
+        icon: <GiHeavyCollar/>,
 
     },
     {
@@ -53,7 +53,7 @@ const data = [
     {
         id: 8,
         desc: 'Orthopedic Care',
-        icon: <BiSolidBone />,
+        icon: <GiBrokenBone />,
 
     },
     {

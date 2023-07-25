@@ -9,7 +9,7 @@ const Footer = () => {
                     <a className="link link-hover text-[#5e636c]" href='/'>Home</a>
                     <a className="link link-hover text-[#5e636c]" href='/about'>About us</a>
                     <a className="link link-hover text-[#5e636c]" href='/contact'>Contact</a>
-                    <a className="link link-hover text-[#5e636c]" href='https://www.careerbuilder.com/browse?TNNotFound=true' rel="noreferrer" target='_blank' >Jobs</a>
+                    <a className="link link-hover text-[#5e636c]" href='https://www.indeed.com/cmp/Meadowbrook-Bolingbrook/jobs/l-Des-Plaines,-IL' rel="noreferrer" target='_blank' >Jobs</a>
 
                 </div>
                 <div>
