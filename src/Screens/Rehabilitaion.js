@@ -15,7 +15,7 @@ import { FaBus } from 'react-icons/fa'
 import { BsTelephone } from 'react-icons/bs'
 import RehabCards from '../components/RehabCards'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
-import TEAM from '../assets/rehab/abilityteam.jpg'
+import TEAM from '../assets/rehab/TherapyGroup1.jpg'
 
 
 
@@ -127,31 +127,28 @@ const Rehabilitation = () => {
           </AnimationOnScroll>
         </div>
 
-        <div className='grid grid-cols-1 lg:grid-cols-2 pt-32 gap-12 px-6 md:px-24 lg:px-8 xl:px-52 '>
+        <div className='flex flex-col lg:flex-row justify-center items-center pt-32 md:px-12  '>
 
+            <div className=' h-128 md:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} >
 
-            <div className='px-12 py-12 rounded-3xl h-128 flex flex-col bg-[#f97777] justify-center items-center' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} >
-              <h2 className='pb-8 text-white'>Meet the Team</h2>
-              <img src={TEAM} alt='team' className='h-96 w-96 rounded-2xl' />
-            </div>
-            
-
-
-            <div className='h-128 flex flex-col justify-center items-center rounded-3xl bg-[#f97777] text-white md:font-bold' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} >
-
-              <h1 className='text-6xl' ><GiHospitalCross /></h1>
-              <p className='flex items-center h-80 px-12 md:px-16 2xl:px-32 text-center text-sm md:text-base'>
-              Experience post-hospital rehabilitation with on-site, specialized therapy by Chicagoland's premier contracted provider, Ability Rehab. Our therapists are available up to 7 days a week, working closely with patients throughout their stay to achieve powerful therapy solutions and optimal outcomes. With patient-centered care as our mission, we aim for successful treatment and a return to an independent life. Trust our interdisciplinary care team and Ability therapists for the highest level of recovery through individually designed rehabilitation plans.
+              <h1 className='text-6xl text-[#df6706]' ><GiHospitalCross /></h1>
+              <p className='flex items-center items-start h-80 pr-6 text-sm lg:text-base'>
+              Post-Hospital Rehabilitation patients will receive on site, specialized therapy offered by our contracted therapy provider, Ability Rehab. Ability Rehab is Chicagoland's premier contracted provider of Physical, Occupational and Speech-Language rehabilitation. Ability therapists are available up to 7 days/week and have the ability to work with the same patients during their rehabilitation stay to ensure powerful therapy solutions and optimal patient outcomes.
               </p>
               <a
                 href='https://abilityrehab.net/'
-                className='no-underline text-black bg-white px-3 py-2 rounded-2xl '
+                className='no-underline text-white font-bold bg-[#df6706] px-3 py-2 rounded-xl '
                 target='_blank'
                 rel='noreferrer'
               >
-                Read More
+                Learn More
               </a>
             </div>
+            <div className='' >
+              <img src={TEAM} alt='team' className=' w-104 md:w-full md:h-104 lg:h-96 lg:scale-110 rounded-2xl' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} />
+            </div>
+
+
         </div>
 
 
