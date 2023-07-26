@@ -129,9 +129,9 @@ const Rehabilitation = () => {
 
         <div className='flex flex-col lg:flex-row justify-center items-center pt-32 md:px-12  '>
 
-            <div className=' md:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-t-2xl lg:rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} >
+            <div className=' md:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-t-2xl lg:rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6 ' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} >
 
-              <h1 className='text-4xl md:text-6xl text-[#df6706]' ><GiHospitalCross /></h1>
+              <h1 className='text-4xl md:text-6xl text-[#df6706] ' ><GiHospitalCross /></h1>
               <p className='flex items-center items-start h-60 md:h-80 pr-3 md:pr-6 text-sm lg:text-base'>
               Post-Hospital Rehabilitation patients will receive on site, specialized therapy offered by our contracted therapy provider, Ability Rehab. Ability Rehab is Chicagoland's premier contracted provider of Physical, Occupational and Speech-Language rehabilitation. Ability therapists are available up to 7 days/week and have the ability to work with the same patients during their rehabilitation stay to ensure powerful therapy solutions and optimal patient outcomes.
               </p>
