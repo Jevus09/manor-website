@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import FrontCarousel from '../components/FrontCarousel'
 import Services from '../components/Services'
-import OurMissionBanner from '../components/missionBanner/OurMissionBanner'
+import OurMissionBanner from '../components/OurMissionBanner'
 import Team from '../components/Team'
 import SecondBanner from '../components/SecondBanner'
 import Reasons from '../components/Reasons'
