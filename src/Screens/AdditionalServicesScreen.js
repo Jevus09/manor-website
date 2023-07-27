@@ -1,43 +1,44 @@
 import React from 'react'
 import BANNER from '../assets/additionalServices/services.webp'
-import {GiFruitBowl} from 'react-icons/gi'
-import {MdOutlineLocalPharmacy, MdEmojiPeople} from 'react-icons/md'
-import {ImLab} from 'react-icons/im'
-import {FaXRay} from 'react-icons/fa'
-import {GiUltrasound} from 'react-icons/gi'
+import { GiFruitBowl } from 'react-icons/gi'
+import { MdOutlineLocalPharmacy, MdEmojiPeople } from 'react-icons/md'
+import { ImLab } from 'react-icons/im'
+import { FaXRay } from 'react-icons/fa'
+import { GiUltrasound } from 'react-icons/gi'
 import AdditionalServices from '../components/AdditionalServices'
+import { Helmet } from "react-helmet"
 
 
 const data = [
   {
     id: 1,
     title: 'Personalized Nutrition Services',
-    icon: <GiFruitBowl/>,
+    icon: <GiFruitBowl />,
   },
   {
     id: 2,
     title: 'Social Work Services',
-    icon: <MdEmojiPeople/>,
+    icon: <MdEmojiPeople />,
   },
   {
     id: 3,
     title: 'Pharmacy',
-    icon: <MdOutlineLocalPharmacy/>,
+    icon: <MdOutlineLocalPharmacy />,
   },
   {
     id: 4,
     title: 'Lab - Routine',
-    icon: <ImLab/>,
+    icon: <ImLab />,
   },
   {
     id: 5,
     title: 'Portable X-Rays',
-    icon: <FaXRay/>,
+    icon: <FaXRay />,
   },
   {
     id: 6,
     title: 'Arterial/Venous Dopplers',
-    icon: <GiUltrasound/>,
+    icon: <GiUltrasound />,
   },
 ]
 
@@ -45,6 +46,10 @@ const data = [
 const AdditionalServicesScreen = () => {
   return (
     <div >
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Lee Manor | Additional Services</title>
+      </Helmet>
 
       {/*Banner*/}
       <div className=''>
@@ -67,7 +72,7 @@ const AdditionalServicesScreen = () => {
         </div>
       </div>
 
-      <AdditionalServices/>
+      <AdditionalServices />
 
 
     </div>

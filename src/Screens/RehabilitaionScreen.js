@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import BANNER from '../assets/rehab/Rehab-banner.webp'
 import REHAB from '../assets/rehab/rehab.webp'
 import GIF from '../assets/rehab/rehab.gif'
@@ -17,6 +17,8 @@ import RehabCards from '../components/RehabCards'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import TEAM from '../assets/rehab/TherapyGroup1.jpg'
 import AdditionalCare from '../components/AdditionalCare'
+import { TiArrowUpOutline } from 'react-icons/ti'
+import { Helmet } from "react-helmet"
 
 
 
@@ -74,8 +76,36 @@ const data = [
 ]
 
 const RehabilitationScreen = () => {
+  const [visible, setVisible] = useState(false);
+
+  const toggleVisible = () => {
+    if (
+      document.body.scrollTop > 500 ||
+      document.documentElement.scrollTop > 500
+    ) {
+      setVisible(true);
+    } else {
+      setVisible(false);
+    }
+  }
+
+  useEffect(() => {
+    // Listen for Scrolling Event
+    window.addEventListener("scroll", toggleVisible, true);
+    return () => {
+      window.removeEventListener("scroll", toggleVisible, true);
+    }
+  }, []);
+
+  const clickHandler = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Lee Manor | Rehabilitation Programs</title>
+      </Helmet>
       {/* Top Banner */}
       <div>
         <div
@@ -128,11 +158,11 @@ const RehabilitationScreen = () => {
 
 
 
-            {/*Team photo/card*/}
-          <div className='flex flex-col lg:flex-row justify-center items-center pt-32 md:px-12  '>
-            <div className=' md:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-t-2xl lg:rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6 ' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }} >
-              <h1 className='text-4xl md:text-6xl text-[#df6706] ' ><GiHospitalCross /></h1>
-              <p className='flex items-center items-start h-60 md:h-80 pr-3 md:pr-8 text-sm xl:text-base'>
+          {/*Team photo/card*/}
+          <div className='flex flex-col md:flex-row justify-center items-center pt-32 md:px-12  '>
+            <div className=' md:h-72 lg:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-t-2xl lg:rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6 md:py-1 lg:py-6 ' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }} >
+              <h1 className='text-4xl lg:text-6xl text-[#df6706] md:invisible lg:visible' ><GiHospitalCross /></h1>
+              <p className='flex items-center items-start h-60 md:h-80 pr-3 lg:pr-8 text-sm md:text-xs lg:text-sm '>
                 Post-Hospital Rehabilitation patients will receive on site, specialized therapy offered by our contracted therapy provider, Ability Rehab. Ability Rehab is Chicagoland's premier contracted provider of Physical, Occupational and Speech-Language rehabilitation. Ability therapists are available up to 7 days/week and have the ability to work with the same patients during their rehabilitation stay to ensure powerful therapy solutions and optimal patient outcomes.
               </p>
               <a
@@ -144,14 +174,14 @@ const RehabilitationScreen = () => {
                 Learn More
               </a>
             </div>
-              <img src={TEAM} alt='team' className=' w-104 md:w-auto md:h-104 lg:h-96 lg:scale-110 rounded-b-2xl lg:rounded-2xl' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }} />
+            <img src={TEAM} alt='team' className=' w-104 md:h-72 lg:h-96 md:w-auto  md:scale-110 rounded-b-2xl md:rounded-2xl' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }} />
           </div>
 
           <div className='py-24'>
-          <h1 className='px-2'>
-            SHORT-TERM REHAB SPECIALITY PROGRAMS
-          </h1>
-        </div>
+            <h1 className='px-2'>
+              SHORT-TERM REHAB SPECIALITY PROGRAMS
+            </h1>
+          </div>
 
 
 
@@ -159,7 +189,7 @@ const RehabilitationScreen = () => {
 
           {/*SHORT-TERM REHAB CARDS*/}
           <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
-            <RehabCards  />
+            <RehabCards />
           </AnimationOnScroll>
 
 
@@ -167,7 +197,7 @@ const RehabilitationScreen = () => {
 
 
           {/*ADDITIONAL CARE*/}
-            <AdditionalCare/>
+          <AdditionalCare />
         </div>
       </div>
 
@@ -193,6 +223,7 @@ const RehabilitationScreen = () => {
           </div>
         </div>
       </div>
+      <button className={visible && 'fixed bottom-4 right-4 md:bottom-12 md:right-16 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500'} onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
     </div>
   )
 }

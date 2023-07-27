@@ -3,6 +3,7 @@ import { BsTelephonePlus } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaFax } from 'react-icons/fa';
 import CONTACT from '../assets/contact/contactus.webp';
+import { Helmet } from "react-helmet"
 
 
 
@@ -39,21 +40,25 @@ const ContactScreen = () => {
 
     return (
         <div >
+            <Helmet>
+                <meta charSet="utf-8" />
+                <title>Lee Manor | Contact Us</title>
+            </Helmet>
             {/* MAP */}
             <div  >
                 <div  >
                     <div className=''>
-                    <iframe 
-                    src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_API_KEY}&center=42.029507646164156,-87.8934861419573&zoom=15&q=place_id:ChIJU4ev4ae3D4gR00c-GPjM4i8&`} 
-                    height="450" 
-                    className='w-full' 
-                    frameborder="0" 
-                    style={{ border: 0 }} 
-                    allowfullscreen="" 
-                    aria-hidden="false" 
-                    tabindex="-1" 
-                    title='map' 
-                    ></iframe>
+                        <iframe
+                            src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_API_KEY}&center=42.029507646164156,-87.8934861419573&zoom=15&q=place_id:ChIJU4ev4ae3D4gR00c-GPjM4i8&`}
+                            height="450"
+                            className='w-full'
+                            frameborder="0"
+                            style={{ border: 0 }}
+                            allowfullscreen=""
+                            aria-hidden="false"
+                            tabindex="-1"
+                            title='map'
+                        ></iframe>
                     </div>
                 </div>
             </div>

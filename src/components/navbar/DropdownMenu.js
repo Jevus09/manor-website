@@ -13,7 +13,7 @@ const DropdownMenu = () => {
 
   return (
     <div>
-      <Navbar bg='light' variant='light' className='border border-white'>
+      <Navbar  variant='light' className='border border-white'>
         <Container>
           <div className='min-[701px]:hidden p-0 sm:ml-44'>
           {/*eslint-disable-next-line*/}
