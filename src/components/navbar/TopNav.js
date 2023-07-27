@@ -21,13 +21,13 @@ function HeaderNavbar() {
           </div>
           <div className='d-flex align-items-center  '>
             <Navbar.Text className='d-none d-sm-flex align-items-center  me-4'>
-              <AiOutlinePhone className='text-3xl text-[#3f87b9] max-[639px]:hidden' />
-              <a className='text-sm max-[639px]:hidden no-underline phone' href='tel:+847-635-4000'>
+              <AiOutlinePhone className='text-3xl text-[#3f87b9] max-[701px]:hidden' />
+              <a className='text-sm max-[701px]:hidden no-underline phone' href='tel:+847-635-4000'>
                 847-635-4000
               </a>
             </Navbar.Text>
             <div className='d-none d-sm-block '>
-              <div className='grid grid-flow-col gap-2 max-[639px]:hidden'>
+              <div className='grid grid-flow-col gap-2 max-[701px]:hidden'>
                 <a className='link link-hover text-white bg-[#3073b7] rounded-full p-2' href='mailto:admissions@leemanor.com' rel="noopener noreferrer"  >
                   <AiOutlineMail className='text-lg  duration-200' />
                 </a>

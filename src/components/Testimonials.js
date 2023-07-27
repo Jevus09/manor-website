@@ -96,10 +96,10 @@ function Testimonials() {
 
     return (
 
-            <div className="bg-[#f6f6f6]">
+            <div className="bg-[#fff9f6]">
                 <div className="flex flex-col justify-center items-center pt-5" >
                     <h3>Testimonials</h3>
-                    <h1 className="text-center px-2">What Our Patients Says About Us</h1>
+                    <h1 className="text-center px-2">What Our Patients Are Saying</h1>
                 </div>
                 <div className="flex justify-center items-center w-full 2xl:px-44 ">
                     <AliceCarousel

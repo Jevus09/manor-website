@@ -6,8 +6,8 @@ function BottomNav() {
     <>
       <Navbar className='py-0'>
         <Container className=''>
-          <div className='hidden sm:block w-screen'>
-            <Nav className='flex text-xs lg:text-base font-bold justify-between p-1 text-center sticky top-0 '>
+          <div className='hidden min-[701px]:block w-screen'>
+            <Nav className='flex text-xs lg:text-sm xl:text-base font-bold justify-between p-1 text-center sticky top-0'>
               <Nav.Link href='/' >HOME</Nav.Link>
               <Nav.Link href='/about' >ABOUT US</Nav.Link>
               <Nav.Link href='/rehab-programs' >REHABILITATION</Nav.Link>

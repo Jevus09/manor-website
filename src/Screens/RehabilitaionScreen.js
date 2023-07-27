@@ -16,6 +16,7 @@ import { BsTelephone } from 'react-icons/bs'
 import RehabCards from '../components/RehabCards'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import TEAM from '../assets/rehab/TherapyGroup1.jpg'
+import AdditionalCare from '../components/AdditionalCare'
 
 
 
@@ -72,7 +73,7 @@ const data = [
   },
 ]
 
-const Rehabilitation = () => {
+const RehabilitationScreen = () => {
   return (
     <div>
       {/* Top Banner */}
@@ -95,7 +96,11 @@ const Rehabilitation = () => {
         </div>
       </div>
 
-      {/* Cards */}
+
+
+
+
+      {/* TOP SERVICES */}
       <div className='flex flex-col items-center justify-center bg-[#09153d] '>
         <div className='grid grid-cols-2 lg:grid-cols-5 gap-4 '>
           {data.map((item) => (
@@ -109,31 +114,26 @@ const Rehabilitation = () => {
         </div>
       </div>
 
+
+
+
+
       {/* Ability */}
       <div >
-      <div className='flex justify-center h-72  '>
-        <img src={GIF} alt='' />
-      </div>
-      <div className='flex flex-col text-center justify-center '>
-        <div className='py-12'>
-          <h1 className='px-2'>
-            SHORT-TERM REHAB SPECIALITY PROGRAMS
-          </h1>
+        <div className='flex justify-center h-72  '>
+          <img src={GIF} alt='' />
         </div>
-          
-        <div>
-          <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
-          <RehabCards  />
-          </AnimationOnScroll>
-        </div>
+        <div className='flex flex-col text-center justify-center '>
 
-        <div className='flex flex-col lg:flex-row justify-center items-center pt-32 md:px-12  '>
 
-            <div className=' md:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-t-2xl lg:rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6 ' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} >
 
+
+            {/*Team photo/card*/}
+          <div className='flex flex-col lg:flex-row justify-center items-center pt-32 md:px-12  '>
+            <div className=' md:h-96 w-104 md:w-full lg:w-128 flex flex-col items-start rounded-t-2xl lg:rounded-2xl bg-[#fbdbc1] text-start pl-12 py-6 ' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }} >
               <h1 className='text-4xl md:text-6xl text-[#df6706] ' ><GiHospitalCross /></h1>
-              <p className='flex items-center items-start h-60 md:h-80 pr-3 md:pr-6 text-sm lg:text-base'>
-              Post-Hospital Rehabilitation patients will receive on site, specialized therapy offered by our contracted therapy provider, Ability Rehab. Ability Rehab is Chicagoland's premier contracted provider of Physical, Occupational and Speech-Language rehabilitation. Ability therapists are available up to 7 days/week and have the ability to work with the same patients during their rehabilitation stay to ensure powerful therapy solutions and optimal patient outcomes.
+              <p className='flex items-center items-start h-60 md:h-80 pr-3 md:pr-8 text-sm xl:text-base'>
+                Post-Hospital Rehabilitation patients will receive on site, specialized therapy offered by our contracted therapy provider, Ability Rehab. Ability Rehab is Chicagoland's premier contracted provider of Physical, Occupational and Speech-Language rehabilitation. Ability therapists are available up to 7 days/week and have the ability to work with the same patients during their rehabilitation stay to ensure powerful therapy solutions and optimal patient outcomes.
               </p>
               <a
                 href='https://abilityrehab.net/'
@@ -144,22 +144,36 @@ const Rehabilitation = () => {
                 Learn More
               </a>
             </div>
-            <div className='' >
-              <img src={TEAM} alt='team' className=' w-104 md:w-auto md:h-104 lg:h-96 lg:scale-110 rounded-b-2xl lg:rounded-2xl' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}} />
-            </div>
+              <img src={TEAM} alt='team' className=' w-104 md:w-auto md:h-104 lg:h-96 lg:scale-110 rounded-b-2xl lg:rounded-2xl' style={{ boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px' }} />
+          </div>
 
-
+          <div className='py-24'>
+          <h1 className='px-2'>
+            SHORT-TERM REHAB SPECIALITY PROGRAMS
+          </h1>
         </div>
 
 
 
 
 
+          {/*SHORT-TERM REHAB CARDS*/}
+          <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+            <RehabCards  />
+          </AnimationOnScroll>
 
-        <div className='flex justify-center items-center py-16  '>
+
+
+
+
+          {/*ADDITIONAL CARE*/}
+            <AdditionalCare/>
         </div>
       </div>
-      </div>
+
+
+
+
       {/* Questions Banner */}
       <div className=''>
         <div
@@ -183,4 +197,4 @@ const Rehabilitation = () => {
   )
 }
 
-export default Rehabilitation
+export default RehabilitationScreen
