@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "react-alice-carousel/lib/alice-carousel.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Lora:wght@400;500;700&family=Tangerine:wght@400;700&display=swap');
 
 
 * {
@@ -58,6 +59,17 @@ code {
   color: #3f87b9 !important;
 }
 
+
+.missionText {
+  font-family: 'Tangerine', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+
+}
+
+.missiongp {
+  font-family: 'Lato', sans-serif;
+} 
 
 @media only screen and (max-width: 639px) {
   .test {
