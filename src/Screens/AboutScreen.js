@@ -7,6 +7,7 @@ import REHAB from '../assets/aboutus/Rehabilitation.webp'
 import SPECI from '../assets/aboutus/Specialized.webp'
 import { AnimationOnScroll } from 'react-animation-on-scroll'
 import { Helmet } from "react-helmet"
+import { HelmetProvider } from 'react-helmet-async'
 
 
 
@@ -37,11 +38,13 @@ const data = [
 const AboutScreen = () => {
     return (
         <div className=''>
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Lee Manor | About Us</title>
-                <link rel="canonical" href="http://mysite.com/example" />
-            </Helmet>
+            <HelmetProvider>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Lee Manor | About Us</title>
+                    <link rel="canonical" href="http://mysite.com/example" />
+                </Helmet>
+            </HelmetProvider>
 
             {/*Banner*/}
             <div className='pb-5'>

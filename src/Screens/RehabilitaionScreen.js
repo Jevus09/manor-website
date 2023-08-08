@@ -19,6 +19,7 @@ import TEAM from '../assets/rehab/TherapyGroup1.jpg'
 import AdditionalCare from '../components/AdditionalCare'
 import { TiArrowUpOutline } from 'react-icons/ti'
 import { Helmet } from "react-helmet"
+import { HelmetProvider } from 'react-helmet-async'
 
 
 
@@ -102,10 +103,12 @@ const RehabilitationScreen = () => {
   }
   return (
     <div>
+      <HelmetProvider>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Lee Manor | Rehabilitation Programs</title>
       </Helmet>
+      </HelmetProvider>
       {/* Top Banner */}
       <div>
         <div
@@ -223,7 +226,7 @@ const RehabilitationScreen = () => {
           </div>
         </div>
       </div>
-      <button className={visible && 'fixed bottom-4 right-4 md:bottom-12 md:right-16 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500'} onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
+      <button className={visible && 'fixed bottom-4 right-4 md:bottom-12 md:right-16 z40 bg-[#333333] rounded-full px-2 py-2 text-white text-sm md:hover:scale-125 duration-500'} onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' /></button>
     </div>
   )
 }

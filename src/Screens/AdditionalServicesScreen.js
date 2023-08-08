@@ -7,6 +7,7 @@ import { FaXRay } from 'react-icons/fa'
 import { GiUltrasound } from 'react-icons/gi'
 import AdditionalServices from '../components/AdditionalServices'
 import { Helmet } from "react-helmet"
+import { HelmetProvider } from 'react-helmet-async'
 
 
 const data = [
@@ -46,10 +47,12 @@ const data = [
 const AdditionalServicesScreen = () => {
   return (
     <div >
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Lee Manor | Additional Services</title>
-      </Helmet>
+      <HelmetProvider>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Lee Manor | Additional Services</title>
+        </Helmet>
+      </HelmetProvider>
 
       {/*Banner*/}
       <div className=''>

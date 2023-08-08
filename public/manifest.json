@@ -1,19 +1,19 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Lee Manor",
+  "name": "Welcome to Lee Manor post hospital rehabilitation and long term care",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "caduceus.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "caduceus.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "caduceus.png",
       "type": "image/png",
       "sizes": "512x512"
     }

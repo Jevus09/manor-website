@@ -1,10 +1,12 @@
+import React, { useRef, useState } from 'react'
 import { GoLocation } from 'react-icons/go';
 import { BsTelephonePlus } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 import { FaFax } from 'react-icons/fa';
 import CONTACT from '../assets/contact/contactus.webp';
 import { Helmet } from "react-helmet"
-
+import emailjs from '@emailjs/browser';
+import { HelmetProvider } from 'react-helmet-async';
 
 
 const data = [
@@ -37,13 +39,32 @@ const data = [
 
 
 const ContactScreen = () => {
+    const form = useRef();
+    const [isFormSubmitted, setIsFormSubmitted] = useState(false);
 
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_h5slopj', 'template_z5jaubo', form.current, 'UGJsIlxE278IEs64h')
+            .then((result) => {
+                console.log(result.text);
+                setIsFormSubmitted(true);
+                form.current.reset();
+                setTimeout(() => {
+                    setIsFormSubmitted(false);  
+                }, 5000);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };;
     return (
-        <div >
-            <Helmet>
-                <meta charSet="utf-8" />
-                <title>Lee Manor | Contact Us</title>
-            </Helmet>
+        <div  >
+            <HelmetProvider>
+                <Helmet>
+                    <meta charSet="utf-8" />
+                    <title>Lee Manor | Contact Us</title>
+                </Helmet>
+            </HelmetProvider>
             {/* MAP */}
             <div  >
                 <div  >
@@ -52,11 +73,10 @@ const ContactScreen = () => {
                             src={`https://www.google.com/maps/embed/v1/place?key=${process.env.REACT_APP_API_KEY}&center=42.029507646164156,-87.8934861419573&zoom=15&q=place_id:ChIJU4ev4ae3D4gR00c-GPjM4i8&`}
                             height="450"
                             className='w-full'
-                            frameborder="0"
                             style={{ border: 0 }}
-                            allowfullscreen=""
+                            allowFullScreen=""
                             aria-hidden="false"
-                            tabindex="-1"
+                            tabIndex="-1"
                             title='map'
                         ></iframe>
                     </div>
@@ -93,32 +113,44 @@ const ContactScreen = () => {
                         <img src={CONTACT} alt='' className='hidden sm:block w-96 ' style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px' }} />
                     </div>
                     <div className='px-3 ' >
-                        <div className='w-60 grid gap-3 justify-items-center  '>
+                        <form ref={form} onSubmit={sendEmail} className='w-60 grid gap-3 justify-items-center  '>
                             <input
                                 type='text'
                                 placeholder='Name:'
+                                name="first_name"
                                 className='input w-full max-w-xs bg-white border '
                             />
                             <input
                                 type='text'
                                 placeholder='E-mail:'
                                 className='input w-full max-w-xs bg-white border'
+                                name="email"
                             />
                             <input
                                 type='number'
+                                name='phone'
                                 inputMode='numeric'
                                 placeholder='Phone:'
                                 className='input  w-full max-w-xs bg-white border'
                             />
                             <textarea
                                 className='textarea w-full max-w-xs bg-white border text-start'
+                                name="message"
                                 placeholder='Message:'
                             ></textarea>
-                            <a className='flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' href='/#'>Submit</a>
-                        </div>
+                            <button className='flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' >Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
+            <div className='flex justify-center items-center bg-[#ebf3fc]' >
+            <div className="alert alert-success flex items-center justify-center w-128" style={{ display: isFormSubmitted ? 'flex' : 'none' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                <span >Thank you for your inquiry! We will be in touch soon.</span>
+            </div>
+        </div>
         </div>
     );
 };

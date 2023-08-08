@@ -48,7 +48,7 @@ const clickHandler = () => {
       <Programs/>
       <Testimonials/>
 
-        <button className={visible && 'fixed bottom-4 right-4 md:bottom-12 md:right-16 z40 bg-[#333333] rounded-full px-3 py-2 text-white text-sm md:hover:scale-125 duration-500' } onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' />UP</button>
+        <button className={visible && 'fixed bottom-4 right-4 md:bottom-12 md:right-16 z40 bg-[#333333] rounded-full px-2 py-2 text-white text-sm md:hover:scale-125 duration-500' } onClick={clickHandler}  > <TiArrowUpOutline className='text-xl' /></button>
 
 
     </div>
