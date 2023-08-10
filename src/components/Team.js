@@ -1,7 +1,7 @@
 import React from 'react';
 import JAY from '../assets/greetings/jay.jpg';
 import NEAL from '../assets/greetings/neal.png';
-import MOZ from '../assets/greetings/mozzie.webp';
+import MOZ from '../assets/greetings/helen.jpeg';
 import DIR from '../assets/greetings/director.jpg';
 
 
@@ -9,9 +9,9 @@ const data = [
   {
     id: 1,
     photo: MOZ,
-    name: 'Mozzie',
+    name: 'Helen Reyes',
     title: 'MHA, MBA, LNHA, CDP',
-    job: 'Head of Nursing',
+    job: 'Director of Nursing',
     desc: 'I am committed to upholding the highest standards of healthcare, leading a skilled team of caregivers, and ensuring our residents receive personalized and compassionate attention',
   },
   {
