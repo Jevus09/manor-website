@@ -2,6 +2,7 @@ import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
 import { ImFacebook } from 'react-icons/im'
+import { FaLinkedinIn } from 'react-icons/fa'
 import logo from '../../assets/Lee.webp'
 import DropdownMenu from './DropdownMenu'
 import BottomNav from './BottomNav'
@@ -33,6 +34,9 @@ function HeaderNavbar() {
                 </a>
                 <a className='link link-hover bg-[#3073b7] text-white rounded-full p-2' href='https://www.facebook.com/LeeManorSNF' rel="noreferrer" target='_blank' >
                 <ImFacebook/>
+                </a>
+                <a className='link link-hover bg-[#3073b7] text-white rounded-full p-2' href='https://www.linkedin.com/company/lee-manor' rel="noreferrer" target='_blank' >
+                <FaLinkedinIn/>
                 </a>
               </div>
             </div>

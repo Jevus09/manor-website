@@ -2,6 +2,7 @@ import {React, useState } from 'react';
 import { Container, Nav, Navbar, Offcanvas } from 'react-bootstrap'
 import { AiOutlineMail } from 'react-icons/ai'
 import { ImFacebook } from 'react-icons/im'
+import { FaLinkedinIn } from 'react-icons/fa'
 
 
 const DropdownMenu = () => {
@@ -44,6 +45,9 @@ const DropdownMenu = () => {
                 </a>
                 <a className='link link-hover bg-[#3073b7] text-white rounded-full p-2' href='https://www.facebook.com/LeeManorSNF' rel="noreferrer" target='_blank' >
                 <ImFacebook className='text-3xl'/>
+                </a>
+                <a className='link link-hover bg-[#3073b7] text-white rounded-full p-2' href='https://www.linkedin.com/company/lee-manor' rel="noreferrer" target='_blank' >
+                <FaLinkedinIn className='text-3xl'/>
                 </a>
               </div>
           </Nav>
