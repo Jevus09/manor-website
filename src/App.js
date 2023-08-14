@@ -1,7 +1,7 @@
 import HeaderNavbar from './components/navbar/TopNav';
 import './index.css';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomeScreen from './Screens/HomeScreen'
 import ContactScreen from './Screens/ContactScreen';
 import AboutScreen from './Screens/AboutScreen';
