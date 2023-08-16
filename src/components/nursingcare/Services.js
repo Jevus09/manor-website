@@ -1,9 +1,8 @@
 import React from 'react'
 import { BsFillLungsFill, BsBandaidFill, BsFillClockFill } from 'react-icons/bs'
 import { TbPhysotherapist } from 'react-icons/tb'
-import { GiBrain, GiSwapBag, GiHospitalCross, GiHeavyCollar, GiMedicalDrip, GiBrokenBone } from 'react-icons/gi'
-
-
+import { GiBrain, GiSwapBag, GiHospitalCross, GiMedicalDrip, GiBrokenBone } from 'react-icons/gi'
+import TR from '../../assets/NursingCare/Untitled.svg'
 
 
 
@@ -29,7 +28,8 @@ const data = [
     {
         id: 4,
         desc: 'Tracheostomy Care',
-        icon: <GiHeavyCollar/>,
+        icon: TR,
+        // icon: <GiHeavyCollar/>,
 
     },
     {
@@ -83,8 +83,8 @@ const Services = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 justify-items-center gap-6 lg:px-12 xl:px-4 2xl:px-36'>
             {data.map((item) => (
                 <div key={item.id} className=' w-5/6 md:w-80 lg:w-44 xl:w-60 h-44 flex flex-col justify-center items-center rounded-2xl md:hover:scale-110 duration-500 bg-[#f97777] text-white font-bold ' style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}}>
-                    <div className=' w-max pt-2'>
-                        <h1 className='text-5xl p-3 rounded-xl'>{item.icon}</h1>
+                  <div className=' w-max pt-2'>
+                        { item.icon === TR ? <img src={TR} alt={item.name} className='h-20 text-white' /> : <h1 className='text-5xl p-3 rounded-xl'>{item.icon}</h1>}
                     </div>
                     <div >
                         <p className='text-sm p-2 h-12 text-center'>{item.desc}</p>
