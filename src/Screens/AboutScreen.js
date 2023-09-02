@@ -69,14 +69,14 @@ const AboutScreen = () => {
                             <img src={HISTORY} alt='Lee Manor' className='h-52 ' style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px' }} />
                             <div className='flex flex-col justify-center items-center' >
                                 <h4 className=' py-2' >Our History</h4>
-                                <p className='text-xs text-center w-72  ' >Lee Manor Rehabilitation & Skilled Nursing Facility has been a trusted provider of dignified, home-like care for over 30 years. Since opening our doors in 1979, our family-owned facility has prioritized the well-being of our residents, making us a reliable choice for quality care.</p>
+                                <p className='text-xs text-center w-72 h-32 ' >Lee Manor Rehabilitation & Skilled Nursing Facility has been a trusted provider of dignified, home-like care for over 30 years. Since opening our doors in 1979, our family-owned facility has prioritized the well-being of our residents, making us a reliable choice for quality care.</p>
                             </div>
                         </div>
                         <div className='flex flex-col justify-evenly items-center lg:px-20 h-max w-full'>
                             <img src={REHAB} alt='rehab' className='h-52' style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px' }} />
                             <div className='flex flex-col justify-center items-center' >
                                 <h4 className='text-center text-base py-2'>Comprehensive Rehabilitation Services</h4>
-                                <p className='text-xs text-center w-96  ' >At Lee Manor, we offer sub-acute, short-term rehabilitation services aimed at helping patients regain their independence and return home as quickly as possible. Our dedicated team provides physical, occupational, respiratory, speech, and wound care therapy seven days a week. To enhance the rehabilitation process, we've designed an innovative "Rehab Room" with a model kitchen, bath, and even a car, allowing residents to practice essential skills and build confidence for a successful recovery.</p>
+                                <p className='text-xs text-center w-96 h-32  ' >At Lee Manor, we offer sub-acute, short-term rehabilitation services aimed at helping patients regain their independence and return home as quickly as possible. Our dedicated team provides physical, occupational, respiratory, speech, and wound care therapy seven days a week. To enhance the rehabilitation process, we've designed an innovative "Rehab Room" with a model kitchen, bath, and even a car, allowing residents to practice essential skills and build confidence for a successful recovery.</p>
                             </div>
                         </div>
                     </div>
