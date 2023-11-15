@@ -35,7 +35,7 @@ const data = [
   },
   {
     id: 5,
-    service: 'Medic-Aid Services',
+    service: 'Medicaid Services',
     icon: <AiOutlineMedicineBox />,
     desc: 'Onsite business Office Manager that can assist with Medicaid process',
   },
