@@ -1,7 +1,7 @@
 import React from 'react';
 import JAY from '../assets/greetings/jay.jpg';
 import MOZ from '../assets/greetings/helen.jpeg';
-import DIR from '../assets/greetings/director.jpg';
+import DIR from '../assets/greetings/director.webp';
 
 
 const data = [
@@ -24,8 +24,8 @@ const data = [
 {
     id: 3,
     photo: DIR,
-    name: 'Giga Yanong',
-    job: 'Social Services Director',
+    name: 'Alexys Opel',
+    job: 'Director of Social Services',
     title: 'MHSA, LNHA, CDP',
     desc: 'My passion lies in leading a skilled and compassionate team to provide top-quality care, empowering our residents to achieve their highest level of independence and happiness.',
 },
@@ -46,7 +46,7 @@ const Team = () => {
          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center py-12 gap-4 md:px-12 lg:px-8 xl:px-10 2xl:px-44  ' >
             {data.map((item) => (
                 <div key={item.id}  className='border h-112  w-80 lg:w-60 xl:w-72 flex flex-col justify-center items-center text-center bg-white rounded-lg' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}} >
-                    <img src={item.photo} alt={item.name} className='h-40 rounded-full ' style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}} />
+                    <img src={item.photo} alt={item.name} className='h-40 rounded-full ' loading="lazy" style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}} />
                     <h3 className='text-black pt-2' >{item.name}</h3>
                     <h5 className='text-xs mb-3' >{item.title}</h5>
                     <h5 className='text-blue-300' >{item.job}</h5>

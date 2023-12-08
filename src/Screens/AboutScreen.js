@@ -88,17 +88,17 @@ const AboutScreen = () => {
             {/* Bottom three Cards */}
 
             <div className='bg-[#f5efed]'>
-                <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
+
                     <div className='flex flex-col justify-center items-center py-12 text-center' >
                         <h4 className='text-sm md:text-base' >Caring Haven for Alzheimer's & Dementia Patients</h4>
                         <h2>Providing Specialized Care, Comfort and Community</h2>
                     </div>
-                </AnimationOnScroll>
+
                 <div className='flex flex-col md:flex-row' >
                     {data.map((item) => (
                         <div key={item.id} className='flex flex-col justify-evenly items-center h-96 w-full'>
                             <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true}>
-                                <img src={item.image} alt={item.title} className='h-52' style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px' }} />
+                                <img src={item.image} alt={item.title} className='h-52' loading="lazy" style={{ boxShadow: 'rgba(0, 0, 0, 0.15) 0px 5px 15px 0px' }} />
                             </AnimationOnScroll>
                             <div className='flex flex-col justify-center items-center' >
                                 <h4>{item.title}</h4>
