@@ -35,7 +35,7 @@ const data = [
     photo: JUDY,
     name: 'Judy Ortega',
     job: 'Wound Care Specialist',
-    title: 'RN, BSN, wcc, cwca',
+    title: 'RN, BSN, WCC, CWCA',
     desc: 'I am deeply committed to delivering top-tier wound care, blending medical expertise with heartfelt compassion. My mission is to optimize healing, minimize discomfort, and enhance the quality of life for each patient. ',
 },
 
