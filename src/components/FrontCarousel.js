@@ -1,5 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
-import first from '../assets/carousel/leemanor.jpg';
+import first from '../assets/carousel/leemanor.webp';
 import second from '../assets/carousel/therapy.webp';
 import third from '../assets/carousel/nursing.webp';
 
