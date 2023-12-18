@@ -39,24 +39,85 @@ const data = [
 
 
 const ContactScreen = () => {
-    const form = useRef();
     const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+    const [formErrors, setFormErrors] = useState({});
+    const form = useRef();
+
+
+
+    
 
     const sendEmail = (e) => {
         e.preventDefault();
 
-        emailjs.sendForm('service_h5slopj', 'template_z5jaubo', form.current, 'UGJsIlxE278IEs64h')
-            .then((result) => {
-                console.log(result.text);
-                setIsFormSubmitted(true);
-                form.current.reset();
-                setTimeout(() => {
-                    setIsFormSubmitted(false);  
-                }, 5000);
-            }, (error) => {
-                console.log(error.text);
-            });
+
+        const formData = new FormData(form.current);
+        const errors = {};
+    
+        // Check Full Name
+        const fullName = formData.get("first_name");
+        if (!fullName) {
+          errors.first_name = "Full Name is required";
+        }
+
+            // Check Email
+        const email = formData.get("email");
+        if (!email) {
+        errors.email = "Email is required";
+        } else if (!isValidEmail(email)) {
+        errors.email = "Invalid email";
+        }
+
+        // Check Phone Number
+        const phone = formData.get("phone");
+        if (!phone) {
+        errors.phone = "Phone Number is required";
+        } else if (!isValidPhoneNumber(phone)) {
+        errors.phone = "Phone number must be 10 digits";
+        }
+
+        // Check Message
+        const message = formData.get("message");
+        if (!message) {
+        errors.message = "Message is required";
+        }
+
+        if (Object.keys(errors).length === 0) {
+            emailjs
+              .sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                form.current,
+                process.env.REACT_APP_EMAIL_KEY
+              )
+              .then(
+                (result) => {
+                  console.log(result.text);
+                  setIsFormSubmitted(true);
+                  form.current.reset();
+                  setTimeout(() => {
+                    setIsFormSubmitted(false);
+                  }, 5000);
+                },
+                (error) => {
+                  console.log(error.text);
+                }
+              );
+          } else {
+            setFormErrors(errors);
+          }
     };;
+
+
+    const isValidEmail = (email) => {
+        const emailPattern = /^\S+@\S+\.\S+$/;
+        return emailPattern.test(email);
+      };
+    
+      const isValidPhoneNumber = (phone) => {
+        return /^\d{10}$/.test(phone);
+      };
+
     return (
         <div  >
             <HelmetProvider>
@@ -116,28 +177,51 @@ const ContactScreen = () => {
                         <form ref={form} onSubmit={sendEmail} className='w-60 grid gap-3 justify-items-center  '>
                             <input
                                 type='text'
-                                placeholder='Name:'
+                                placeholder='Full Name:'
                                 name="first_name"
-                                className='input w-full max-w-xs bg-white border '
+                                className='input w-full max-w-xs bg-white border'
+                                
                             />
+                            {formErrors.first_name && (
+                                <div className='text-red-500 text-xs'>
+                                    {formErrors.first_name}
+                                    </div>
+                                )}
                             <input
                                 type='text'
                                 placeholder='E-mail:'
                                 className='input w-full max-w-xs bg-white border'
                                 name="email"
+                                
                             />
+                            {formErrors.email && (
+                                <div className='text-red-500 text-xs'>
+                                    {formErrors.email}
+                                    </div>
+                                )}
                             <input
                                 type='number'
                                 name='phone'
                                 inputMode='numeric'
-                                placeholder='Phone:'
+                                placeholder='Phone Number:'
                                 className='input  w-full max-w-xs bg-white border'
                             />
+                            {formErrors.phone && (
+                                <div className='text-red-500 text-xs'>
+                                    {formErrors.phone}
+                                    </div>
+                                )}
                             <textarea
                                 className='textarea w-full max-w-xs bg-white border text-start'
                                 name="message"
                                 placeholder='Message:'
+                                
                             ></textarea>
+                            {formErrors.message && (
+                                <div className='text-red-500 text-xs'>
+                                    {formErrors.message}
+                                    </div>
+                                )}
                             <button className='flex bg-[#09153d] text-white py-2 px-5 rounded-lg no-underline w-max' >Submit</button>
                         </form>
                     </div>
