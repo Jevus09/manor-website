@@ -76,7 +76,7 @@ const ContactScreen = () => {
         errors.phone = "Phone number must be 10 digits";
         }
 
-        // Check Message
+
         const message = formData.get("message");
         if (!message) {
         errors.message = "Message is required";
