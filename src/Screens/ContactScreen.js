@@ -183,7 +183,7 @@ const ContactScreen = () => {
                                 
                             />
                             {formErrors.first_name && (
-                                <div className='text-red-500 text-xs'>
+                                <div className='text-red-500'>
                                     {formErrors.first_name}
                                     </div>
                                 )}
@@ -195,7 +195,7 @@ const ContactScreen = () => {
                                 
                             />
                             {formErrors.email && (
-                                <div className='text-red-500 text-xs'>
+                                <div className='text-red-500'>
                                     {formErrors.email}
                                     </div>
                                 )}
@@ -207,7 +207,7 @@ const ContactScreen = () => {
                                 className='input  w-full max-w-xs bg-white border'
                             />
                             {formErrors.phone && (
-                                <div className='text-red-500 text-xs'>
+                                <div className='text-red-500'>
                                     {formErrors.phone}
                                     </div>
                                 )}
@@ -218,7 +218,7 @@ const ContactScreen = () => {
                                 
                             ></textarea>
                             {formErrors.message && (
-                                <div className='text-red-500 text-xs'>
+                                <div className='text-red-500'>
                                     {formErrors.message}
                                     </div>
                                 )}
