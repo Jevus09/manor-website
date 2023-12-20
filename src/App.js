@@ -18,8 +18,8 @@ function App() {
       <HeaderNavbar  />
         <Routes>
           <Route path="/" element={<HomeScreen />} exact />
-          <Route path="/contact" element={<ContactScreen />} />
-          <Route path="/about" element={<AboutScreen />} />
+          <Route path="/contact-us" element={<ContactScreen />} />
+          <Route path="/about-us" element={<AboutScreen />} />
           <Route path="/rehab-programs" element={<RehabilitaionScreen />} />
           <Route path="/additional-services" element={<AdditionalServicesScreen />} />
           <Route path="/nursing-care" element={<NursingCareScreen />} />

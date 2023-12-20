@@ -32,12 +32,12 @@ const DropdownMenu = () => {
         <Offcanvas.Body className='py-0' >
           <Nav className='me-auto text-center flex justify-center items-center' >
             <Nav.Link href='/' className='py-2' >HOME</Nav.Link>
-            <Nav.Link href='/about'  className='py-2'>ABOUT US</Nav.Link>
+            <Nav.Link href='/about-us'  className='py-2'>ABOUT US</Nav.Link>
             <Nav.Link href='/rehab-programs' className='py-2'>POST-HOSPITAL REHABILITATION</Nav.Link>
             <Nav.Link href='/additional-services' className='py-2'>ADDITIONAL SERVICES</Nav.Link>
             <Nav.Link href='/nursing-care' className='py-2'>SKILLED NURSING CARE</Nav.Link>
             <Nav.Link href='https://www.indeed.com/cmp/Meadowbrook-Bolingbrook/jobs/l-Des-Plaines,-IL' target='_blank' className='py-2'>EMPLOYMENT</Nav.Link>
-            <Nav.Link href='/contact' className='py-2'>CONTACT</Nav.Link>
+            <Nav.Link href='/contact-us' className='py-2'>CONTACT</Nav.Link>
             <a href='tel:+847-635-4000' className='no-underline bg-[#09153d] w-max text-white px-3 py-2 w-64 rounded-2xl'>(847)-635-4000</a>
             <div className='flex gap-5 justify-center pt-4'>
                 <a className='link link-hover bg-[#3073b7] rounded-full p-2' href='mailto:admissions@leemanor.com' rel="noopener noreferrer"  >
