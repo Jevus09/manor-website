@@ -11,7 +11,7 @@ const SecondBanner = () => {
           Let us treat your loved ones like family.<br/> 
           Call us directly - <a href='tel:+847-635-4000' className='no-underline text-white'>847 635 4000</a>
         </p>
-        <a href='/#' className=" text-sm md:text-base border border-line py-2 px-4 rounded-full text-white no-underline">Get in Touch</a>
+        <a href='/contact-us' className=" text-sm md:text-base border border-line py-2 px-4 rounded-full text-white no-underline">Get in Touch</a>
       </div>
     </div>
   );

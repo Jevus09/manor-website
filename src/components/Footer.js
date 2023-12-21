@@ -7,8 +7,8 @@ const Footer = () => {
             <div>
                     <span className="footer-title text-white">Company</span>
                     <a className="link link-hover text-white" href='/'>Home</a>
-                    <a className="link link-hover text-white" href='/about'>About us</a>
-                    <a className="link link-hover text-white" href='/contact'>Contact</a>
+                    <a className="link link-hover text-white" href='/about-us'>About us</a>
+                    <a className="link link-hover text-white" href='/contact-us'>Contact</a>
                     <a className="link link-hover text-white" href='https://www.indeed.com/cmp/Meadowbrook-Bolingbrook/jobs/l-Des-Plaines,-IL' rel="noreferrer" target='_blank' >Jobs</a>
 
                 </div>
@@ -17,7 +17,7 @@ const Footer = () => {
                     <a className="link link-hover text-white" href='/rehab-programs'>Rehabilitation</a>
                     <a className="link link-hover text-white" href='/additional-services'>Additional Services</a>
                     <a className="link link-hover text-white" href='/nursing-care'>Skilled Nursing Care</a>
-                    <a className="link link-hover text-white" href='/privacy-policy'>Privacy Policy</a>
+                    <p className="text-white" >Privacy Policy</p>
                 </div>
             </footer>
             <div className='flex bg-[#15191e] justify-center text-white text-xs '>
