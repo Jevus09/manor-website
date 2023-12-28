@@ -22,7 +22,7 @@ function App() {
           <Route path="/about-us" element={<AboutScreen />} />
           <Route path="/rehab-programs" element={<RehabilitaionScreen />} />
           <Route path="/additional-services" element={<AdditionalServicesScreen />} />
-          <Route path="/nursing-care" element={<NursingCareScreen />} />
+          <Route path="/skilled-nursing-care" element={<NursingCareScreen />} />
           <Route path="*" element={<PageNotFoundScreen />} />       
         </Routes>
       <Footer />

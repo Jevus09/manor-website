@@ -12,7 +12,7 @@ function BottomNav() {
               <Nav.Link href='/about-us' >ABOUT US</Nav.Link>
               <Nav.Link href='/rehab-programs' >REHABILITATION</Nav.Link>
               <Nav.Link href='/additional-services' >ADDITIONAL SERVICES</Nav.Link>
-              <Nav.Link href='/nursing-care' >SKILLED NURSING CARE</Nav.Link>
+              <Nav.Link href='/skilled-nursing-care' >SKILLED NURSING CARE</Nav.Link>
               <Nav.Link href='https://www.indeed.com/cmp/Meadowbrook-Bolingbrook/jobs/l-Des-Plaines,-IL' target='_blank' >EMPLOYMENT</Nav.Link>
               <Nav.Link href='/contact-us' >CONTACT</Nav.Link>
               </Nav>
