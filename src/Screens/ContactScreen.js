@@ -33,7 +33,7 @@ const data = [
         id: 4,
         icon: <AiOutlineMail />,
         title: 'Email Us',
-        description: 'admissions@leemanor.com',
+        description: 'pgallegos@leemanor.com',
     },
 ];
 
@@ -151,13 +151,13 @@ const ContactScreen = () => {
                     {data.map((item) => (
                         <div
                             key={item.id}
-                            className='text-center place-items-center py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg animate__animated animate__fadeInUp' style={{ boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px' }}
+                            className='text-center place-items-center  py-3 border w-44  md:w-44 lg:w-52 bg-[#09153d] text-white drop-shadow-2xl rounded-lg animate__animated animate__fadeInUp' style={{ boxShadow: 'rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px' }}
                         >
                             <div className="flex items-center justify-center">
                                 <h3 className='text-red-600 text-3xl'>{item.icon}</h3>
                             </div>
                             <h3 className='py-3 text-lg hidden sm:block'>{item.title}</h3>
-                            <p className='text-center text-[#98bad6] text-xs flex-wrap'>{item.description}</p>
+                            <p className='text-center text-[#98bad6] text-sm flex-wrap'>{item.description}</p>
                         </div>
                     ))}
                 </div>

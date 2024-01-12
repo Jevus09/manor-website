@@ -29,7 +29,7 @@ function HeaderNavbar() {
             </Navbar.Text>
             <div className='d-none d-sm-block '>
               <div className='grid grid-flow-col gap-2 max-[701px]:hidden'>
-                <a className='link link-hover text-white bg-[#3073b7] rounded-full p-2' href='mailto:admissions@leemanor.com' rel="noopener noreferrer"  >
+                <a className='link link-hover text-white bg-[#3073b7] rounded-full p-2' href='mailto:pgallegos@leemanor.com' rel="noopener noreferrer"  >
                   <AiOutlineMail className='text-lg  duration-200' />
                 </a>
                 <a className='link link-hover bg-[#3073b7] text-white rounded-full p-2' href='https://www.facebook.com/LeeManorSNF' rel="noreferrer" target='_blank' >

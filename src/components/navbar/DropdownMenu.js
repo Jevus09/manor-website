@@ -40,7 +40,7 @@ const DropdownMenu = () => {
             <Nav.Link href='/contact-us' className='py-2'>CONTACT</Nav.Link>
             <a href='tel:+847-635-4000' className='no-underline bg-[#09153d] w-max text-white px-3 py-2 w-64 rounded-2xl'>(847)-635-4000</a>
             <div className='flex gap-5 justify-center pt-4'>
-                <a className='link link-hover bg-[#3073b7] rounded-full p-2' href='mailto:admissions@leemanor.com' rel="noopener noreferrer"  >
+                <a className='link link-hover bg-[#3073b7] rounded-full p-2' href='mailto:pgallegos@leemanor.com' rel="noopener noreferrer"  >
                   <AiOutlineMail className='text-white text-3xl' />
                 </a>
                 <a className='link link-hover bg-[#3073b7] text-white rounded-full p-2' href='https://www.facebook.com/LeeManorSNF' rel="noreferrer" target='_blank' >
