@@ -65,7 +65,7 @@ const Services = () => {
           </h3>
           <h5 className="text-white text-base font-bold">{item.title}</h5>
           <TbTilde className='text-[#98bad6] my-1' />
-          <p className="text-[#98bad6] text-xs font-thin">
+          <p className="text-white text-sm md:text-base font-bold">
             {item.text}
             <br />
             {item.text2}

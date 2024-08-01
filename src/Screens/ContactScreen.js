@@ -14,7 +14,7 @@ const data = [
         id: 1,
         icon: <GoLocation />,
         title: 'Our Location',
-        description: '1301 Lee St, Des Plaines, IL 60018',
+        description: '1301 Lee St, Des Plaines, IL',
     },
     {
         id: 2,
@@ -157,7 +157,7 @@ const ContactScreen = () => {
                                 <h3 className='text-red-600 text-3xl'>{item.icon}</h3>
                             </div>
                             <h3 className='py-3 text-lg hidden sm:block'>{item.title}</h3>
-                            <p className='text-center text-[#98bad6] text-sm flex-wrap'>{item.description}</p>
+                            <p className='text-center text-white text-sm flex-wrap'>{item.description}</p>
                         </div>
                     ))}
                 </div>
