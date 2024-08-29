@@ -16,7 +16,7 @@ const AdditionalCare = () => {
                     <h2 className='text-start text-gray-500 px-4 py-6 text-4xl md:text-3xl ' >Long-Term Care</h2>
                     <p className='font-light px-4 text-start text-lg md:text-base' >At all of our locations, you will find our long-term care is completely customized to our residents’ needs. This is because we begin with a comprehensive assessment which is completed and reviewed by our comprehensive interdisciplinary team which includes nursing, physical/mental therapy, nutritionists, as well as activities specialists and social services professionals. The result? Your loved one will have a customized healthcare plan designed to optimize his or her quality of life.</p>
                 </div>
-                <img src={LONG} alt='Long-Term Care' loading="lazy" className='px-12 md:px-0 py-10 md:h-60'  />
+                <img src={LONG} alt='Long-Term Care' loading="lazy" className='px-12 md:px-0 py-10 md:h-60 rounded-3xl'  />
             </div>
 
 

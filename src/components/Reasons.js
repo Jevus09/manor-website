@@ -41,7 +41,7 @@ const Reasons = () => {
                             className="grid grid-cols-1 text-center place-items-center p-4"
                         >
                             <AnimationOnScroll animateIn='animate__fadeInUp' animateOnce={true} >
-                            <img src={item.image} alt={item.title} loading="lazy" className='w-96 my-12 px-8 md:px-0'  />
+                            <img src={item.image} alt={item.title} loading="lazy" className='w-96 my-12 px-8 md:px-0 rounded-3xl'  />
                             </AnimationOnScroll>
                             <h3>{item.title}</h3>
                             <TbTilde className='text-[#3f87b9] text-xl my-2' />

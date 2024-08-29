@@ -52,11 +52,11 @@ const Programs = () => {
   return (
     <div className="h-full pb-20 bg-[#f5efed]">
       <h1 className="flex justify-center text-xl md:text-4xl py-10 md:py-24">Our Rehabilitation Programs</h1>
-      <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center 2xl:px-72 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 justify-items-center 2xl:px-72 gap-4 ">
         {data.map((item) => (
-          <div key={item.id} className="place-content-center w-max">
+          <div key={item.id} className=" place-content-center w-max">
             <div >
-              <Card className="program-card" style={{ height: '16rem', width: '18rem' }}>
+              <Card className="program-card  " style={{ height: '16rem', width: '18rem' }}>
                 {/* Cover of Card */}
                 <Card.Body
                   className="bg-center bg-cover flex flex-col justify-center items-center"

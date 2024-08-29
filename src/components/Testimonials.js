@@ -7,8 +7,7 @@ import GAYLE from '../assets/testimonials/GAYLE.webp'
 import React from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
-import {RiDoubleQuotesL} from 'react-icons/ri'
-import {MdOutlineStar} from 'react-icons/md'
+import { MdOutlineStar } from 'react-icons/md'
 
 
 
@@ -56,14 +55,14 @@ function Testimonials() {
             picture: KING,
             name: 'Sky',
             rating: '',
-            review: "This place makes u positive",
+            review: "This place makes u positive                                                    ",
         },
     ]
 
     const responsive = {
         0: {
             items: 1,
-            itemsFit: 'contain' 
+            itemsFit: 'contain'
         },
         800: {
             items: 2,
@@ -78,42 +77,54 @@ function Testimonials() {
 
     const items = data.map((item) => (
         <div key={item.id} className="flex "  >
-            <div className=" flex justify-center items-center w-screen py-5 " >
-                <div className="bg-[white] h-96  md:w-max flex flex-col rounded-xl justify-center items-center " style={{boxShadow: 'rgb(38, 57, 77) 0px 20px 30px -10px'}}>
-                    <img src={item.picture} alt={item.name} className="h-12 w-12 rounded-full" />
-                    <div className="flex py-4 text-[#fec42d] text-lg">
-                        <MdOutlineStar/><MdOutlineStar/><MdOutlineStar/><MdOutlineStar/><MdOutlineStar/>
+            <div className=" flex justify-center h-112 w-screen items-center px-12  py-5 " >
+                <div className="bg-[white] h-96 w-80  flex flex-col rounded-3xl justify-center items-center relative" style={{ boxShadow: 'rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px' }}>
+
+                    <div className='relative' >
+                        <img src={item.picture} alt={item.name} className="h-24 w-24 rounded-full object-cover -translate-y-5 relative "style={{ boxShadow: 'rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px' }} />
                     </div>
-                    <h3 className="w-96 text-xs font-bold px-5 text-center"><RiDoubleQuotesL className='text-xl text-[#3f87b9]'/>{item.review}</h3>
-                    <h5 className="py-2 text-[#3f87b9] font-medium ">{item.name}</h5>
+
+                    <div>
+                        <h5 className="flex justify-center items-center py-2 h-12 text-[#3f87b9] text-3xl ">{item.name}</h5>
+                        <hr className="border-t-2 text-black mx-20  rounded-xl" />
+                        <h3 className="review flex justify-center  w-96 text-sm  px-5 text-center h-48">{item.review}</h3>
+                        <div className="flex justify-center text-[#fec42d] pb-10 text-2xl ">
+                        <MdOutlineStar /><MdOutlineStar /><MdOutlineStar /><MdOutlineStar /><MdOutlineStar />
+                    </div>
+                    </div>
+
+
+
                 </div>
             </div>
+
+
         </div>
     ))
-    
+
 
 
 
     return (
 
-            <div className="bg-[#fff9f6]">
-                <div className="flex flex-col justify-center items-center pt-5" >
-                    <h3>Testimonials</h3>
-                    <h1 className="text-center px-2">What Our Patients Are Saying</h1>
-                </div>
-                <div className="flex justify-center items-center w-full 2xl:px-44 ">
-                    <AliceCarousel
-                        items={items}
-                        mouseTracking
-                        autoPlay
-                        infinite
-                        autoPlayInterval={5000}
-                        animationDuration={1500}
-                        responsive={responsive}
-                        disableButtonsControls                    
-                    />
-                </div>
+        <div className="bg-[#fff9f6]">
+            <div className="flex flex-col justify-center items-center pt-5" >
+                <h3>Testimonials</h3>
+                <h1 className="text-center px-2">What Our Patients Are Saying</h1>
             </div>
+            <div className="flex justify-center items-center w-screen 2xl:px-44 ">
+                <AliceCarousel
+                    items={items}
+                    mouseTracking
+                    autoPlay
+                    infinite
+                    autoPlayInterval={5000}
+                    animationDuration={1500}
+                    responsive={responsive}
+                    disableButtonsControls
+                />
+            </div>
+        </div>
 
     );
 }
