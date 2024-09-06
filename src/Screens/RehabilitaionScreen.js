@@ -107,6 +107,8 @@ const RehabilitationScreen = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Lee Manor | Rehabilitation Programs</title>
+        <meta name="description" content="Our rehabilitation programs at Lee Manor help individuals recover and regain independence after surgery or illness. Offering physical, occupational, and speech therapy, we are dedicated to personalized, effective care." />
+
       </Helmet>
       </HelmetProvider>
       {/* Top Banner */}

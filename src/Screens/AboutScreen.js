@@ -42,7 +42,8 @@ const AboutScreen = () => {
                 <Helmet>
                     <meta charSet="utf-8" />
                     <title>Lee Manor | About Us</title>
-                    <link rel="canonical" href="http://mysite.com/example" />
+                    <meta name="description" content="Lee Manor has been family-owned and operated since 1979, providing compassionate, dignified care to aging community members. Learn more about our 260-bed skilled nursing and rehabilitation facility in Des Plaines." />
+
                 </Helmet>
             </HelmetProvider>
 

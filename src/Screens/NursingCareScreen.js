@@ -12,6 +12,8 @@ const NursingCareScreen = () => {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Lee Manor | Skilled Nursing Care</title>
+          <meta name="description" content="Lee Manor offers comprehensive skilled nursing care for individuals in need of post-hospital recovery or long-term care. Our dedicated team is committed to ensuring quality care in a comfortable setting." />
+
         </Helmet>
       </HelmetProvider>
       {/*Banner*/}

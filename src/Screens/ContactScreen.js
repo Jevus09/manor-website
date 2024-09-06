@@ -123,7 +123,8 @@ const ContactScreen = () => {
             <HelmetProvider>
                 <Helmet>
                     <meta charSet="utf-8" />
-                    <title>Lee Manor | Contact Us</title>
+                    <title>Lee Manor | Contact Us</title><meta name="description" content="Get in touch with Lee Manor for any questions or to schedule a tour of our 260-bed skilled nursing and rehabilitation facility. Located at 1301 N. Lee Street, Des Plaines, we are here to assist you with your care needs." />
+
                 </Helmet>
             </HelmetProvider>
             {/* MAP */}
@@ -204,7 +205,7 @@ const ContactScreen = () => {
                                     </div>
                                 )}
                                 <input
-                                    type='number'
+                                    type='tel'
                                     name='phone'
                                     inputMode='numeric'
                                     placeholder='Phone Number:'

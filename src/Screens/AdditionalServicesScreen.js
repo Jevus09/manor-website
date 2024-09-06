@@ -51,6 +51,8 @@ const AdditionalServicesScreen = () => {
         <Helmet>
           <meta charSet="utf-8" />
           <title>Lee Manor | Additional Services</title>
+          <meta name="description" content="At Lee Manor, we provide a variety of additional services, including therapy, personal care assistance, and social programs, designed to support our residents' well-being and quality of life." />
+
         </Helmet>
       </HelmetProvider>
 
