@@ -29,7 +29,7 @@ const data = [
   photo: JAY,
   name: 'Jay Calderon',
   job: 'Administrator',
-  title: 'MHA, MBA, LNHA, CDP',
+  title: 'MHA, MBA, LNHA, CDP, LPN',
   desc: 'I am dedicated to ensuring compassionate and exceptional care for our residents, fostering a warm and supportive environment that promotes healing and well-being.',
 },
 {
