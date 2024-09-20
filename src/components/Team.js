@@ -63,14 +63,14 @@ const Team = () => {
             <h1 className='text-3xl font-bold text-[#284795] ' >Guiding Excellence</h1>
             <h2 className='text-sm'>Meet Our Dedicated Leadership Team</h2>
          </div>
-         <div className='flex flex-wrap py-12 gap-5  lg:px-20 xl:px-52 justify-center ' >
+         <div className='flex flex-wrap py-12 gap-4  lg:px-20  justify-center ' >
             {data.map((item) => (
-                <div key={item.id}  className='border h-112  w-80 lg:w-60 xl:w-72 flex flex-col justify-center items-center text-center bg-white rounded-2xl' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}} >
+                <div key={item.id}  className='border h-110 md:h-112  w-80 flex flex-col justify-center items-center text-center bg-white rounded-2xl' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}} >
                     <img src={item.photo} alt={item.name} className='h-40 rounded-full ' loading="lazy" style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}} />
                     <h3 className='text-black pt-2' >{item.name}</h3>
                     <h5 className='text-xs mb-3' >{item.title}</h5>
                     <h5 className='text-[#284795]' >{item.job}</h5>
-                    <p className='px-6 h-40 py-2 text-sm' >{item.desc}</p>
+                    <p className='px-6 md:h-32 xl:h-20 py-2 text-sm' >{item.desc}</p>
 
                  </div>
             ))}
