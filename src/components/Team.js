@@ -3,6 +3,7 @@ import JAY from '../assets/greetings/jay.jpg';
 import HELEN from '../assets/greetings/helen.jpeg';
 import DIR from '../assets/greetings/director.webp';
 import JUDY from '../assets/greetings/Judy.webp';
+import TIF from '../assets/greetings/Tiffany.JPG'
 
 
 const data = [
@@ -17,14 +18,22 @@ const data = [
 },
 {
     id: 2,
-    photo: JAY,
-    name: 'Jay Calderon',
-    job: 'Administrator',
-    title: 'MHA, MBA, LNHA, CDP',
-    desc: 'I am dedicated to ensuring compassionate and exceptional care for our residents, fostering a warm and supportive environment that promotes healing and well-being.',
+    photo: TIF,
+    name: 'Tiffany Suciu',
+    job: 'Nurse Practitioner',
+    title: 'BSN, MSN, FNP-C',
+    desc: 'I am dedicated to providing compassionate, patient-centered care, focusing on holistic well-being to help individuals achieve optimal health and a balanced life.',
 },
 {
   id: 3,
+  photo: JAY,
+  name: 'Jay Calderon',
+  job: 'Administrator',
+  title: 'MHA, MBA, LNHA, CDP',
+  desc: 'I am dedicated to ensuring compassionate and exceptional care for our residents, fostering a warm and supportive environment that promotes healing and well-being.',
+},
+{
+  id: 4,
   photo: HELEN,
   name: 'Helen Reyes',
   title: 'BSN, RN, RAC-CT, CDP',
@@ -33,7 +42,7 @@ const data = [
 },
 
 {
-    id: 4,
+    id: 5,
     photo: JUDY,
     name: 'Judy Ortega',
     job: 'Wound Care Specialist',
@@ -54,7 +63,7 @@ const Team = () => {
             <h1 className='text-3xl font-bold text-[#284795] ' >Guiding Excellence</h1>
             <h2 className='text-sm'>Meet Our Dedicated Leadership Team</h2>
          </div>
-         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-items-center py-12 gap-5 md:px-12 lg:px-8 xl:px-10 2xl:px-44  ' >
+         <div className='flex flex-wrap py-12 gap-5  lg:px-20 xl:px-52 justify-center ' >
             {data.map((item) => (
                 <div key={item.id}  className='border h-112  w-80 lg:w-60 xl:w-72 flex flex-col justify-center items-center text-center bg-white rounded-2xl' style={{boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px'}} >
                     <img src={item.photo} alt={item.name} className='h-40 rounded-full ' loading="lazy" style={{boxShadow: 'rgba(0, 0, 0, 0.24) 0px 3px 8px'}} />
@@ -71,3 +80,4 @@ const Team = () => {
 };
 
 export default Team;
+
