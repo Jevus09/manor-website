@@ -10,21 +10,23 @@ import RehabilitaionScreen from './Screens/RehabilitaionScreen';
 import NursingCareScreen from './Screens/NursingCareScreen';
 import AdditionalServicesScreen from './Screens/AdditionalServicesScreen';
 import PageNotFoundScreen from './Screens/PageNotFoundScreen';
-
+import GATracker from './useGATracking';
 
 function App() {
+
   return (
     <Router>
-      <HeaderNavbar  />
-        <Routes>
-          <Route path="/" element={<HomeScreen />} exact />
-          <Route path="/contact-us" element={<ContactScreen />} />
-          <Route path="/about-us" element={<AboutScreen />} />
-          <Route path="/rehab-programs" element={<RehabilitaionScreen />} />
-          <Route path="/additional-services" element={<AdditionalServicesScreen />} />
-          <Route path="/skilled-nursing-care" element={<NursingCareScreen />} />
-          <Route path="*" element={<PageNotFoundScreen />} />       
-        </Routes>
+      <GATracker /> 
+      <HeaderNavbar />
+      <Routes>
+        <Route path="/" element={<HomeScreen />} exact />
+        <Route path="/contact-us" element={<ContactScreen />} />
+        <Route path="/about-us" element={<AboutScreen />} />
+        <Route path="/rehab-programs" element={<RehabilitaionScreen />} />
+        <Route path="/additional-services" element={<AdditionalServicesScreen />} />
+        <Route path="/skilled-nursing-care" element={<NursingCareScreen />} />
+        <Route path="*" element={<PageNotFoundScreen />} />
+      </Routes>
       <Footer />
     </Router>
   );
