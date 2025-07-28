@@ -1,23 +1,23 @@
 import React from 'react';
 //import JAY from '../assets/greetings/jay.jpg';
 import HELEN from '../assets/greetings/helen.jpeg';
-import DIR from '../assets/greetings/director.webp';
+//import DIR from '../assets/greetings/director.webp';
 import JUDY from '../assets/greetings/Judy.webp';
 import TIF from '../assets/greetings/Tiffany.JPG'
 
 
 const data = [
 
+  // {
+  //   id: 1,
+  //   photo: DIR,
+  //   name: 'Alexys Opel',
+  //   job: 'Director of Social Services',
+  //   title: 'BA/BS, MSW',
+  //   desc: 'My passion lies in leading a skilled and compassionate team to provide top-quality care, empowering our residents to achieve their highest level of independence and happiness.',
+  // },
   {
     id: 1,
-    photo: DIR,
-    name: 'Alexys Opel',
-    job: 'Director of Social Services',
-    title: 'BA/BS, MSW',
-    desc: 'My passion lies in leading a skilled and compassionate team to provide top-quality care, empowering our residents to achieve their highest level of independence and happiness.',
-  },
-  {
-    id: 2,
     photo: TIF,
     name: 'Tiffany Suciu',
     job: 'Nurse Practitioner',
@@ -33,16 +33,16 @@ const data = [
   //   desc: 'I am dedicated to ensuring compassionate and exceptional care for our residents, fostering a warm and supportive environment that promotes healing and well-being.',
   // },
   {
-    id: 4,
+    id: 2,
     photo: HELEN,
     name: 'Helen Reyes',
-    title: 'BSN, RN, RAC-CT, CDP',
+    title: 'BSN, RN, DNS-CT, RAC-CT, CDP',
     job: 'Administrator',
     desc: 'I am committed to upholding the highest standards of healthcare, leading a skilled team of caregivers, and ensuring our residents receive personalized and compassionate attention',
   },
 
   {
-    id: 5,
+    id: 3,
     photo: JUDY,
     name: 'Judy Ortega',
     job: 'Wound Care Specialist',
