@@ -4,6 +4,7 @@ import { AiOutlinePhone, AiOutlineMail } from 'react-icons/ai'
 import { ImFacebook } from 'react-icons/im'
 import { FaLinkedinIn } from 'react-icons/fa'
 import logo from '../../assets/Lee.webp'
+import rating from '../../assets/CMS-4-Star-Rating.webp'
 import DropdownMenu from './DropdownMenu'
 import BottomNav from './BottomNav'
 
@@ -13,8 +14,12 @@ function HeaderNavbar() {
       <Navbar className='flex flex-col bg-white  '>
         <Container className='test1'>
           <div className='test w-max'>
-            <Navbar.Brand href='/' className='py-0' >
+            <Navbar.Brand href='/' className='py-0 flex' >
               <img className='sm:h-20 lg:h-24' src={logo} alt='logo' />
+              <a className='' href='https://www.medicare.gov/care-compare/details/nursing-home/145382/view-all?state=IL' rel="noreferrer" target='_blank'>
+                        <img alt='CMS 4 Star Rating' className='sm:h-20 lg:h-22' src={rating} />
+                        
+                    </a>
             </Navbar.Brand>
             <div className='drop'>
               <DropdownMenu />
