@@ -6,7 +6,7 @@ import newsweekrating from '../assets/Newsweek_US_NursingHomes2026_Logo_Hor-scal
 const Footer = () => {
     return (
         <div data-theme="dark" >
-            <footer className="footer p-10 bg-base-300 text-base-content footer-test flex justify-center gap-20 md:gap-60 items-center">
+            <footer className="footer p-10 bg-base-300 text-base-content footer-test flex justify-center sm:gap-3 md:gap-30 lg:gap-60 items-center">
                 <div className='gap-3 flex flex-col items-center'>
                     <a className='' href='https://www.medicare.gov/care-compare/details/nursing-home/145382/view-all?state=IL' rel="noreferrer" target='_blank'>
                         <img alt='CMS 4 Star Rating' className='sm:h-20 lg:h-28' src={rating} />
@@ -14,7 +14,7 @@ const Footer = () => {
                     </a>
                     <img alt='Newsweek 2026 Americas Best Nursing Home' className='sm:h-16 lg:h-20' src={newsweekrating} />
                 </div>
-            <div>
+                <div>
                     <span className="footer-title text-white">Company</span>
                     <a className="link link-hover text-white" href='/'>Home</a>
                     <a className="link link-hover text-white" href='/about-us'>About us</a>
