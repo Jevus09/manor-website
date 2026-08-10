@@ -25,6 +25,7 @@ const Footer = () => {
                 <div className=''>
                     <span className="footer-title text-white">Services</span>
                     <a className="link link-hover text-white" href='/rehab-programs'>Rehabilitation</a>
+                    <a className='link link-hover text-white' href='https://ilaging.illinois.gov/programs/ltcombudsman.html' target='_blank' >Long-Term Care Ombudsman Program</a>
                     <a className="link link-hover text-white" href='/additional-services'>Additional Services</a>
                     <a className="link link-hover text-white" href='/skilled-nursing-care'>Skilled Nursing Care</a>
                     <p className="text-white" >Privacy Policy</p>
